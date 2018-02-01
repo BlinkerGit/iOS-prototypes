@@ -11,7 +11,7 @@
     </dependencies>
     <customFonts key="customFonts">
         <array key="HelveticaNeue.ttc">
-            <string>HelveticaNeue</string>
+            <string>HelveticaNeue-Bold</string>
         </array>
     </customFonts>
     <scenes>
@@ -23,20 +23,14 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="672"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DJh-8e-RtI">
-                                <rect key="frame" x="85" y="504" width="245" height="39"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="22"/>
-                                <state key="normal" title="www.blinker.com/9a32k3"/>
-                            </button>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="emailScreen-flat" translatesAutoresizingMaskIntoConstraints="NO" id="NGV-HT-Ues">
-                                <rect key="frame" x="0.0" y="-3" width="414" height="672"/>
+                                <rect key="frame" x="-333" y="-3" width="1080" height="672"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JhS-On-1z5">
-                                <rect key="frame" x="79" y="402" width="244" height="36"/>
+                                <rect key="frame" x="74" y="398" width="267" height="39"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="20"/>
+                                <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="22"/>
                                 <state key="normal" title="www.blinker.com/923kr4v">
                                     <color key="titleColor" red="0.0029783458448946476" green="0.36932939291000366" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
@@ -65,7 +59,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" preservesSuperviewLayoutMargins="YES" image="signUp" translatesAutoresizingMaskIntoConstraints="NO" id="EyK-zU-B2g">
-                                <rect key="frame" x="0.0" y="-68" width="414" height="740"/>
+                                <rect key="frame" x="-414" y="-68" width="1242" height="740"/>
                                 <autoresizingMask key="autoresizingMask"/>
                             </imageView>
                             <button opaque="NO" tag="1" contentMode="scaleAspectFit" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ygm-bn-iiD">
@@ -100,7 +94,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="reviewOffer-flat" translatesAutoresizingMaskIntoConstraints="NO" id="n85-WJ-kmj">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="672"/>
+                                <rect key="frame" x="-333" y="-4" width="1080" height="672"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7ZO-2e-f3m">
@@ -149,9 +143,9 @@
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Nj-UQ-0V6">
-                                <rect key="frame" x="150" y="295" width="114" height="25"/>
+                                <rect key="frame" x="141" y="301" width="127" height="28"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <fontDescription key="fontDescription" name="HelveticaNeue" family="Helvetica Neue" pointSize="12"/>
+                                <fontDescription key="fontDescription" name="HelveticaNeue-Bold" family="Helvetica Neue" pointSize="13"/>
                                 <state key="normal" title="Need help deciding?">
                                     <color key="titleColor" red="0.0" green="0.47934520244598389" blue="0.99908632040023804" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
@@ -179,17 +173,22 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="672"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" editable="NO" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hJo-Nd-26x">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" editable="NO" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hJo-Nd-26x">
                                 <rect key="frame" x="20" y="233" width="369" height="207"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                                <string key="text">This screen explains what the three options would mean to the user.  Describe how each flow would work so user can be more informed about the process for each.</string>
+                                <string key="text">This screen explains what the three options would mean to the seller.  Describe how each flow would work so seller can be more informed about the process for each.</string>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="25"/>
                                 <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                             </textView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="x3h-zw-GiQ" firstAttribute="trailing" secondItem="hJo-Nd-26x" secondAttribute="trailing" constant="25" id="2KP-ku-wHL"/>
+                            <constraint firstItem="x3h-zw-GiQ" firstAttribute="bottom" secondItem="hJo-Nd-26x" secondAttribute="bottom" constant="232" id="5Ae-my-PjN"/>
+                            <constraint firstItem="hJo-Nd-26x" firstAttribute="top" secondItem="x3h-zw-GiQ" secondAttribute="top" constant="233" id="8aT-9P-0cs"/>
+                            <constraint firstItem="hJo-Nd-26x" firstAttribute="leading" secondItem="x3h-zw-GiQ" secondAttribute="leading" constant="20" id="EQm-SO-sS0"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="x3h-zw-GiQ"/>
                     </view>
                     <navigationItem key="navigationItem" title="Need help deciding?" id="reJ-58-FZE">
@@ -209,11 +208,11 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="plateSnap" translatesAutoresizingMaskIntoConstraints="NO" id="3Dz-DI-iPz">
-                                <rect key="frame" x="0.0" y="-45" width="414" height="683"/>
+                                <rect key="frame" x="0.0" y="-49" width="414" height="683"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="D2q-8X-iBh">
-                                <rect key="frame" x="175" y="501" width="64" height="64"/>
+                                <rect key="frame" x="175" y="498" width="64" height="64"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="snapIcon" image="snapIcon"/>
                                 <connections>
@@ -386,9 +385,8 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="672"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" fixedFrame="YES" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" editable="NO" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ugX-Y0-11G">
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" showsHorizontalScrollIndicator="NO" showsVerticalScrollIndicator="NO" editable="NO" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ugX-Y0-11G">
                                 <rect key="frame" x="23" y="233" width="369" height="207"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                 <string key="text">This screen explains our ownership and fraud verification process.  It should also mention that Buyer will be sent a Carfax Report upon completion of these validations.</string>
                                 <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -397,6 +395,12 @@
                             </textView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="ugX-Y0-11G" firstAttribute="leading" secondItem="DYQ-Gs-4t1" secondAttribute="leading" constant="23" id="YEg-uc-57j"/>
+                            <constraint firstItem="ugX-Y0-11G" firstAttribute="top" secondItem="DYQ-Gs-4t1" secondAttribute="top" constant="233" id="cZ1-h8-oCW"/>
+                            <constraint firstItem="DYQ-Gs-4t1" firstAttribute="bottom" secondItem="ugX-Y0-11G" secondAttribute="bottom" constant="232" id="cuE-0n-7d3"/>
+                            <constraint firstItem="DYQ-Gs-4t1" firstAttribute="trailing" secondItem="ugX-Y0-11G" secondAttribute="trailing" constant="22" id="k3u-Ob-0is"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="DYQ-Gs-4t1"/>
                     </view>
                     <navigationItem key="navigationItem" title="Does my vehicle qualify?" id="reo-IE-a7g">
@@ -416,11 +420,11 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="reject-offer-flat" translatesAutoresizingMaskIntoConstraints="NO" id="hLF-C5-jNB">
-                                <rect key="frame" x="-18" y="-91" width="445" height="736"/>
+                                <rect key="frame" x="-1" y="-65" width="420" height="727"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Yli-oQ-64c">
-                                <rect key="frame" x="27" y="533" width="360" height="32"/>
+                                <rect key="frame" x="27" y="538" width="360" height="32"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="16"/>
                                 <state key="normal" title="List this vehicle on Blinker's marketplace"/>
@@ -438,7 +442,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="K0x-n6-Z6O" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2733" y="924"/>
+            <point key="canvasLocation" x="2730.434782608696" y="923.64130434782612"/>
         </scene>
         <!--Enter listing flow-->
         <scene sceneID="FwQ-C8-5Pd">
@@ -449,7 +453,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="listForSale" translatesAutoresizingMaskIntoConstraints="NO" id="7NT-Kh-YwP">
-                                <rect key="frame" x="-35" y="-82" width="481" height="781"/>
+                                <rect key="frame" x="-16" y="-83" width="450" height="782"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
@@ -495,7 +499,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nlB-yo-vgs">
-                                <rect key="frame" x="175" y="503" width="64" height="64"/>
+                                <rect key="frame" x="175" y="502" width="64" height="64"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="snapIcon" image="snapIcon"/>
                                 <connections>
