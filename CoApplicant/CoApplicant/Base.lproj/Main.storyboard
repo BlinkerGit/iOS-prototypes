@@ -4,6 +4,7 @@
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
+        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
         <capability name="Alignment constraints to the first baseline" minToolsVersion="6.0"/>
         <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
@@ -561,13 +562,13 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="16-phoneNumber" translatesAutoresizingMaskIntoConstraints="NO" id="JN6-3N-oko">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="combinedIncomePhone" translatesAutoresizingMaskIntoConstraints="NO" id="JN6-3N-oko">
                                 <rect key="frame" x="0.0" y="20" width="375" height="647"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="154-f2-wyU">
                                 <rect key="frame" x="0.0" y="417" width="375" height="42"/>
                                 <connections>
-                                    <segue destination="E4b-Il-CZR" kind="show" id="uEa-sV-x7F"/>
+                                    <segue destination="pCz-By-G4o" kind="show" id="xHL-Ky-0CI"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -589,43 +590,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Gc-8i-09w" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1894" y="2245"/>
-        </scene>
-        <!--Prototype Controller-->
-        <scene sceneID="ums-PR-o5J">
-            <objects>
-                <viewController id="E4b-Il-CZR" customClass="PrototypeController" customModule="CoApplicant" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="X2j-db-eo0">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="17-income" translatesAutoresizingMaskIntoConstraints="NO" id="26d-yy-tPw">
-                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
-                            </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="q4f-L1-p2F">
-                                <rect key="frame" x="0.0" y="417" width="375" height="42"/>
-                                <connections>
-                                    <segue destination="pCz-By-G4o" kind="show" id="EFr-Xa-Gyh"/>
-                                </connections>
-                            </button>
-                        </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <constraints>
-                            <constraint firstItem="q4f-L1-p2F" firstAttribute="trailing" secondItem="26d-yy-tPw" secondAttribute="trailing" id="9Qb-eM-iZ1"/>
-                            <constraint firstItem="q4f-L1-p2F" firstAttribute="leading" secondItem="26d-yy-tPw" secondAttribute="leading" id="Htk-fJ-HiY"/>
-                            <constraint firstItem="Cpo-cb-5ER" firstAttribute="trailing" secondItem="26d-yy-tPw" secondAttribute="trailing" id="URF-TT-yCz"/>
-                            <constraint firstItem="26d-yy-tPw" firstAttribute="top" secondItem="Cpo-cb-5ER" secondAttribute="top" id="c9I-j9-cQI"/>
-                            <constraint firstItem="q4f-L1-p2F" firstAttribute="bottom" secondItem="Cpo-cb-5ER" secondAttribute="bottom" constant="-208" id="g6e-Ll-Nek"/>
-                            <constraint firstItem="26d-yy-tPw" firstAttribute="leading" secondItem="Cpo-cb-5ER" secondAttribute="leading" id="jVn-f1-Apz"/>
-                            <constraint firstItem="q4f-L1-p2F" firstAttribute="top" secondItem="Cpo-cb-5ER" secondAttribute="top" constant="397" id="tb2-YR-107"/>
-                            <constraint firstItem="Cpo-cb-5ER" firstAttribute="bottom" secondItem="26d-yy-tPw" secondAttribute="bottom" id="upf-DO-2yf"/>
-                        </constraints>
-                        <viewLayoutGuide key="safeArea" id="Cpo-cb-5ER"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="gTn-XC-Ona"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="zJz-PF-dye" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="-354" y="2918"/>
         </scene>
         <!--Prototype Controller-->
         <scene sceneID="jsW-Ai-L57">
@@ -709,13 +673,13 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="22-coApp_phoneNumber" translatesAutoresizingMaskIntoConstraints="NO" id="Hwp-kz-uyI">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="combinedIncomePhone" translatesAutoresizingMaskIntoConstraints="NO" id="Hwp-kz-uyI">
                                 <rect key="frame" x="0.0" y="20" width="375" height="647"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="l0y-Oy-p2O">
                                 <rect key="frame" x="10" y="419" width="355" height="42"/>
                                 <connections>
-                                    <segue destination="jFD-xQ-dCp" kind="show" id="8hv-T6-z5y"/>
+                                    <segue destination="eYE-MJ-UrB" kind="show" id="GzJ-1J-aZR"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -737,43 +701,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="TzE-96-AMi" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="-354" y="3615"/>
-        </scene>
-        <!--Prototype Controller-->
-        <scene sceneID="xbx-Fu-v8N">
-            <objects>
-                <viewController id="jFD-xQ-dCp" customClass="PrototypeController" customModule="CoApplicant" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="IaZ-09-PPs">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="23-coApp_Income" translatesAutoresizingMaskIntoConstraints="NO" id="1pw-zL-mbT">
-                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
-                            </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s0s-Gz-hBE">
-                                <rect key="frame" x="10" y="419" width="355" height="42"/>
-                                <connections>
-                                    <segue destination="eYE-MJ-UrB" kind="show" id="Hzj-bO-HDI"/>
-                                </connections>
-                            </button>
-                        </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <constraints>
-                            <constraint firstItem="s0s-Gz-hBE" firstAttribute="leading" secondItem="1pw-zL-mbT" secondAttribute="leading" constant="10" id="CZ1-aK-lgr"/>
-                            <constraint firstItem="UMB-P9-vLY" firstAttribute="trailing" secondItem="1pw-zL-mbT" secondAttribute="trailing" id="H9a-k9-05O"/>
-                            <constraint firstItem="s0s-Gz-hBE" firstAttribute="trailing" secondItem="1pw-zL-mbT" secondAttribute="trailing" constant="-10" id="Qpn-XY-PFh"/>
-                            <constraint firstItem="s0s-Gz-hBE" firstAttribute="bottom" secondItem="UMB-P9-vLY" secondAttribute="bottom" constant="-206" id="UF1-ZR-i8r"/>
-                            <constraint firstItem="1pw-zL-mbT" firstAttribute="top" secondItem="UMB-P9-vLY" secondAttribute="top" id="abZ-Pf-ZV9"/>
-                            <constraint firstItem="s0s-Gz-hBE" firstAttribute="top" secondItem="UMB-P9-vLY" secondAttribute="top" constant="399" id="iHh-Jm-Mdo"/>
-                            <constraint firstItem="1pw-zL-mbT" firstAttribute="leading" secondItem="UMB-P9-vLY" secondAttribute="leading" id="pCw-5S-0XR"/>
-                            <constraint firstItem="UMB-P9-vLY" firstAttribute="bottom" secondItem="1pw-zL-mbT" secondAttribute="bottom" id="wxV-0r-fgD"/>
-                        </constraints>
-                        <viewLayoutGuide key="safeArea" id="UMB-P9-vLY"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="smF-b8-HLz"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="MzJ-mT-Nry" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="361" y="3615"/>
         </scene>
         <!--Prototype Controller-->
         <scene sceneID="ufU-h3-CuO">
@@ -1118,14 +1045,10 @@
         <image name="13-backScanOrSkip" width="414" height="736"/>
         <image name="14-manualDataEntry" width="414" height="736"/>
         <image name="15-confirmAddress" width="414" height="736"/>
-        <image name="16-phoneNumber" width="414" height="736"/>
-        <image name="17-income" width="414" height="736"/>
         <image name="19-primaryOverview" width="1242" height="2208"/>
         <image name="2-tapLowerMyPayment_LoggedOut" width="414" height="736"/>
         <image name="20-coApp_manualDataEntry" width="414" height="736"/>
         <image name="21-coApp_confirmAddress" width="414" height="736"/>
-        <image name="22-coApp_phoneNumber" width="414" height="736"/>
-        <image name="23-coApp_Income" width="414" height="736"/>
         <image name="24-coApp_SSN" width="414" height="736"/>
         <image name="25-jointOverview" width="414" height="736"/>
         <image name="26-checkingCredit" width="414" height="736"/>
@@ -1137,6 +1060,7 @@
         <image name="7-refiSplashScreen" width="414" height="736"/>
         <image name="8-confirmVehicleDetails" width="414" height="736"/>
         <image name="9-vehicleDetailsVerifying" width="414" height="736"/>
+        <image name="combinedIncomePhone" width="1243" height="2209"/>
         <image name="declined-try-again" width="414" height="736"/>
         <image name="softPullConsent" width="414" height="736"/>
         <image name="todos" width="414" height="736"/>
