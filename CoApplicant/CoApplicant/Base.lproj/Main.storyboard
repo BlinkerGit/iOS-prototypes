@@ -11,10 +11,10 @@
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
+        <!--Prototype Controller-->
         <scene sceneID="tne-QT-ifu">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="CoApplicant" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="BYZ-38-t0r" customClass="PrototypeController" customModule="CoApplicant" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -48,10 +48,10 @@
             </objects>
             <point key="canvasLocation" x="361" y="134"/>
         </scene>
-        <!--View Controller-->
+        <!--Prototype Controller-->
         <scene sceneID="62p-jP-x5d">
             <objects>
-                <viewController id="HOO-bj-rkj" customClass="ViewController" customModule="CoApplicant" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="HOO-bj-rkj" customClass="PrototypeController" customModule="CoApplicant" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="xPD-IG-cip">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -102,10 +102,10 @@
             </objects>
             <point key="canvasLocation" x="-463" y="134"/>
         </scene>
-        <!--View Controller-->
+        <!--Prototype Controller-->
         <scene sceneID="zEL-IG-xJs">
             <objects>
-                <viewController id="0Z9-Ku-obA" customClass="ViewController" customModule="CoApplicant" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="0Z9-Ku-obA" customClass="PrototypeController" customModule="CoApplicant" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="6Sl-I6-54g">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -139,10 +139,10 @@
             </objects>
             <point key="canvasLocation" x="1821.5999999999999" y="133.5832083958021"/>
         </scene>
-        <!--View Controller-->
+        <!--Prototype Controller-->
         <scene sceneID="SIH-qe-J9G">
             <objects>
-                <viewController id="sS1-tr-QhO" customClass="ViewController" customModule="CoApplicant" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="sS1-tr-QhO" customClass="PrototypeController" customModule="CoApplicant" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="VrY-gl-Bhx">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -176,10 +176,10 @@
             </objects>
             <point key="canvasLocation" x="-354.39999999999998" y="871.21439280359823"/>
         </scene>
-        <!--View Controller-->
+        <!--Prototype Controller-->
         <scene sceneID="0Du-AD-181">
             <objects>
-                <viewController id="wxb-u0-Cv9" customClass="ViewController" customModule="CoApplicant" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="wxb-u0-Cv9" customClass="PrototypeController" customModule="CoApplicant" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="A7L-h0-LN3">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -213,10 +213,10 @@
             </objects>
             <point key="canvasLocation" x="360.80000000000001" y="870.31484257871068"/>
         </scene>
-        <!--View Controller-->
+        <!--Prototype Controller-->
         <scene sceneID="g1i-ya-Iia">
             <objects>
-                <viewController id="Xx1-ch-mny" customClass="ViewController" customModule="CoApplicant" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="Xx1-ch-mny" customClass="PrototypeController" customModule="CoApplicant" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="SEz-cR-IOh">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -250,10 +250,10 @@
             </objects>
             <point key="canvasLocation" x="1120.8" y="870.31484257871068"/>
         </scene>
-        <!--View Controller-->
+        <!--Prototype Controller-->
         <scene sceneID="rHI-FK-dkY">
             <objects>
-                <viewController id="PuR-Ap-TMy" customClass="ViewController" customModule="CoApplicant" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="PuR-Ap-TMy" customClass="PrototypeController" customModule="CoApplicant" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="1Vi-I0-JRN">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -287,10 +287,10 @@
             </objects>
             <point key="canvasLocation" x="1908" y="870.31484257871068"/>
         </scene>
-        <!--View Controller-->
+        <!--Prototype Controller-->
         <scene sceneID="Jms-Ry-j7R">
             <objects>
-                <viewController id="Uq6-lG-Vma" customClass="ViewController" customModule="CoApplicant" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="Uq6-lG-Vma" customClass="PrototypeController" customModule="CoApplicant" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="G6o-W1-iUU">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -324,10 +324,10 @@
             </objects>
             <point key="canvasLocation" x="-354.39999999999998" y="1553.9730134932536"/>
         </scene>
-        <!--View Controller-->
+        <!--Prototype Controller-->
         <scene sceneID="KA1-7d-htf">
             <objects>
-                <viewController id="hQq-lA-YRu" customClass="ViewController" customModule="CoApplicant" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="hQq-lA-YRu" customClass="PrototypeController" customModule="CoApplicant" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="uoZ-e9-zwh">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -368,10 +368,10 @@
             </objects>
             <point key="canvasLocation" x="360.80000000000001" y="1560.2698650674663"/>
         </scene>
-        <!--View Controller-->
+        <!--Prototype Controller-->
         <scene sceneID="fWF-2B-UCE">
             <objects>
-                <viewController id="FpX-LN-1Vg" customClass="ViewController" customModule="CoApplicant" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="FpX-LN-1Vg" customClass="PrototypeController" customModule="CoApplicant" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="mdC-54-dzb">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -405,10 +405,10 @@
             </objects>
             <point key="canvasLocation" x="1121" y="1560"/>
         </scene>
-        <!--View Controller-->
+        <!--Prototype Controller-->
         <scene sceneID="9XJ-oZ-2em">
             <objects>
-                <viewController id="zjH-1P-zWN" customClass="ViewController" customModule="CoApplicant" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="zjH-1P-zWN" customClass="PrototypeController" customModule="CoApplicant" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="qbK-bd-aG9">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -442,10 +442,10 @@
             </objects>
             <point key="canvasLocation" x="1908" y="1559.3703148425789"/>
         </scene>
-        <!--View Controller-->
+        <!--Prototype Controller-->
         <scene sceneID="JxQ-GS-yk8">
             <objects>
-                <viewController id="L9I-XV-mQb" customClass="ViewController" customModule="CoApplicant" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="L9I-XV-mQb" customClass="PrototypeController" customModule="CoApplicant" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="NhS-WW-Jnd">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -479,10 +479,10 @@
             </objects>
             <point key="canvasLocation" x="-354" y="2240"/>
         </scene>
-        <!--View Controller-->
+        <!--Prototype Controller-->
         <scene sceneID="mDC-5J-IqT">
             <objects>
-                <viewController id="7kx-fP-4mw" customClass="ViewController" customModule="CoApplicant" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="7kx-fP-4mw" customClass="PrototypeController" customModule="CoApplicant" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="aBM-lA-ubU">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -516,10 +516,10 @@
             </objects>
             <point key="canvasLocation" x="360.80000000000001" y="2244.8275862068967"/>
         </scene>
-        <!--View Controller-->
+        <!--Prototype Controller-->
         <scene sceneID="NFR-Di-H33">
             <objects>
-                <viewController id="Wbm-C0-Y6B" customClass="ViewController" customModule="CoApplicant" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="Wbm-C0-Y6B" customClass="PrototypeController" customModule="CoApplicant" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="SwI-dB-g2q">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -553,10 +553,10 @@
             </objects>
             <point key="canvasLocation" x="1110" y="2245"/>
         </scene>
-        <!--View Controller-->
+        <!--Prototype Controller-->
         <scene sceneID="v0g-kd-ULd">
             <objects>
-                <viewController id="eXM-V1-3rs" customClass="ViewController" customModule="CoApplicant" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="eXM-V1-3rs" customClass="PrototypeController" customModule="CoApplicant" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="gVG-kM-tAf">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -590,10 +590,10 @@
             </objects>
             <point key="canvasLocation" x="1908" y="2244.8275862068967"/>
         </scene>
-        <!--View Controller-->
+        <!--Prototype Controller-->
         <scene sceneID="RVj-gC-HYn">
             <objects>
-                <viewController id="zC4-Sa-KgP" customClass="ViewController" customModule="CoApplicant" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="zC4-Sa-KgP" customClass="PrototypeController" customModule="CoApplicant" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="r9u-S8-Q5d">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -627,10 +627,10 @@
             </objects>
             <point key="canvasLocation" x="-354" y="2912"/>
         </scene>
-        <!--View Controller-->
+        <!--Prototype Controller-->
         <scene sceneID="ums-PR-o5J">
             <objects>
-                <viewController id="E4b-Il-CZR" customClass="ViewController" customModule="CoApplicant" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="E4b-Il-CZR" customClass="PrototypeController" customModule="CoApplicant" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="X2j-db-eo0">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -664,10 +664,10 @@
             </objects>
             <point key="canvasLocation" x="361" y="2918"/>
         </scene>
-        <!--View Controller-->
+        <!--Prototype Controller-->
         <scene sceneID="Ldh-28-Cru">
             <objects>
-                <viewController id="UX2-c2-GRg" customClass="ViewController" customModule="CoApplicant" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="UX2-c2-GRg" customClass="PrototypeController" customModule="CoApplicant" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="D0D-Te-QL4">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -701,10 +701,10 @@
             </objects>
             <point key="canvasLocation" x="1110" y="2918"/>
         </scene>
-        <!--View Controller-->
+        <!--Prototype Controller-->
         <scene sceneID="AIc-SS-L88">
             <objects>
-                <viewController id="fKZ-UJ-wHi" customClass="ViewController" customModule="CoApplicant" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="fKZ-UJ-wHi" customClass="PrototypeController" customModule="CoApplicant" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="l10-pa-a02">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -738,10 +738,10 @@
             </objects>
             <point key="canvasLocation" x="1908" y="2917.6911544227887"/>
         </scene>
-        <!--View Controller-->
+        <!--Prototype Controller-->
         <scene sceneID="jsW-Ai-L57">
             <objects>
-                <viewController id="XqA-ET-FsX" customClass="ViewController" customModule="CoApplicant" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="XqA-ET-FsX" customClass="PrototypeController" customModule="CoApplicant" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="NwY-Nw-WG3">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -775,10 +775,10 @@
             </objects>
             <point key="canvasLocation" x="-354" y="3591"/>
         </scene>
-        <!--View Controller-->
+        <!--Prototype Controller-->
         <scene sceneID="cKN-RX-uKN">
             <objects>
-                <viewController id="8rA-Ki-xq3" customClass="ViewController" customModule="CoApplicant" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="8rA-Ki-xq3" customClass="PrototypeController" customModule="CoApplicant" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="eW7-qf-79M">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -812,10 +812,10 @@
             </objects>
             <point key="canvasLocation" x="360.80000000000001" y="3590.5547226386811"/>
         </scene>
-        <!--View Controller-->
+        <!--Prototype Controller-->
         <scene sceneID="Sxk-dw-zsU">
             <objects>
-                <viewController id="mib-L7-Vl8" customClass="ViewController" customModule="CoApplicant" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="mib-L7-Vl8" customClass="PrototypeController" customModule="CoApplicant" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="DB0-uU-n1i">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -849,10 +849,10 @@
             </objects>
             <point key="canvasLocation" x="1100" y="3590.5547226386811"/>
         </scene>
-        <!--View Controller-->
+        <!--Prototype Controller-->
         <scene sceneID="xbx-Fu-v8N">
             <objects>
-                <viewController id="jFD-xQ-dCp" customClass="ViewController" customModule="CoApplicant" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="jFD-xQ-dCp" customClass="PrototypeController" customModule="CoApplicant" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="IaZ-09-PPs">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -886,10 +886,10 @@
             </objects>
             <point key="canvasLocation" x="1908" y="3605"/>
         </scene>
-        <!--View Controller-->
+        <!--Prototype Controller-->
         <scene sceneID="ufU-h3-CuO">
             <objects>
-                <viewController id="eYE-MJ-UrB" customClass="ViewController" customModule="CoApplicant" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="eYE-MJ-UrB" customClass="PrototypeController" customModule="CoApplicant" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="7k1-Nc-omY">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -923,10 +923,10 @@
             </objects>
             <point key="canvasLocation" x="-354" y="4271"/>
         </scene>
-        <!--View Controller-->
+        <!--Prototype Controller-->
         <scene sceneID="WFR-8q-NNa">
             <objects>
-                <viewController id="mmm-tg-fpF" customClass="ViewController" customModule="CoApplicant" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="mmm-tg-fpF" customClass="PrototypeController" customModule="CoApplicant" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="3bh-eg-0WO">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -960,10 +960,10 @@
             </objects>
             <point key="canvasLocation" x="361" y="4271"/>
         </scene>
-        <!--View Controller-->
+        <!--Prototype Controller-->
         <scene sceneID="3Xs-rr-LwC">
             <objects>
-                <viewController id="2bd-tp-6Lq" customClass="ViewController" customModule="CoApplicant" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="2bd-tp-6Lq" customClass="PrototypeController" customModule="CoApplicant" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="neZ-Gu-glY">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -997,10 +997,10 @@
             </objects>
             <point key="canvasLocation" x="1110" y="4271"/>
         </scene>
-        <!--View Controller-->
+        <!--Prototype Controller-->
         <scene sceneID="fMe-ZX-FtO">
             <objects>
-                <viewController id="t5W-nh-23W" customClass="ViewController" customModule="CoApplicant" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="t5W-nh-23W" customClass="PrototypeController" customModule="CoApplicant" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="27P-Za-Wkw">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
