@@ -981,11 +981,11 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="12-acceptDriverLicenseSnap" translatesAutoresizingMaskIntoConstraints="NO" id="0pX-lq-BKq">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="28-primaryOverviewRelationExpanded" translatesAutoresizingMaskIntoConstraints="NO" id="0pX-lq-BKq">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ijy-n7-CkX">
-                                <rect key="frame" x="0.0" y="620" width="375" height="42"/>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ijy-n7-CkX">
+                                <rect key="frame" x="0.0" y="400" width="375" height="200"/>
                                 <connections>
                                     <segue destination="XqA-ET-FsX" kind="show" id="gIV-Gn-7xM"/>
                                 </connections>
@@ -1151,6 +1151,7 @@
         <image name="25-jointOverview" width="414" height="736"/>
         <image name="26-checkingCredit" width="414" height="736"/>
         <image name="27preDetailsCheckboxScreen-" width="414" height="736"/>
+        <image name="28-primaryOverviewRelationExpanded" width="414" height="736"/>
         <image name="3-snapVehicle_LoggedOut" width="414" height="736"/>
         <image name="4-tapIntoRefiCell_LoggedOut copy" width="414" height="736"/>
         <image name="5-SignUp" width="414" height="736"/>
