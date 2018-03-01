@@ -10,6 +10,20 @@ import UIKit
 
 class PrototypeController: UIViewController {
 
+  override func viewDidLoad() {
+    super.viewDidLoad()
+
+    let hiddenBackButton = UIButton()
+    hiddenBackButton.frame = CGRect.init(x: 0.0, y: 0.0, width: 100.0, height: 60.0)
+    view.addSubview(hiddenBackButton)
+    hiddenBackButton.addTarget(self, action: #selector(self.goBack), for: .touchUpInside)
+  }
+
+  @objc
+  func goBack() {
+    navigationController?.popViewController(animated: true)
+  }
+
   override func becomeFirstResponder() -> Bool {
     return true
   }
