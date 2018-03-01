@@ -21,3 +21,21 @@ class PrototypeController: UIViewController {
   }
 
 }
+
+class CrossFadeController: PrototypeController {
+
+  @IBOutlet weak var first: UIImageView!
+  @IBOutlet weak var second: UIImageView!
+  @IBOutlet weak var secondHotspot: UIButton!
+
+  override func viewDidLoad() {
+    super.viewDidLoad()
+
+    secondHotspot.isEnabled = false
+  }
+
+  @IBAction func tappedHotspot(_ sender: Any) {
+    view.addSubview(second)
+    secondHotspot.isEnabled = true
+  }
+}
