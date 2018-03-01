@@ -1,0 +1,12 @@
+PODS:
+  - Fingertips (0.5.0)
+
+DEPENDENCIES:
+  - Fingertips
+
+SPEC CHECKSUMS:
+  Fingertips: 8e557eed25253fcb4bfa25ac4418f8e8add1ad9a
+
+PODFILE CHECKSUM: 577a141387d5e9246eb26ce34dd0b35e1c6f3696
+
+COCOAPODS: 1.4.0.beta.2

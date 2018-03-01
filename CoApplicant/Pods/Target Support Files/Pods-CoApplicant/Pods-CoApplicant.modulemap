@@ -1,0 +1,6 @@
+framework module Pods_CoApplicant {
+  umbrella header "Pods-CoApplicant-umbrella.h"
+
+  export *
+  module * { export * }
+}
