@@ -51,5 +51,6 @@ class CrossFadeController: PrototypeController {
   @IBAction func tappedHotspot(_ sender: Any) {
     view.addSubview(second)
     secondHotspot.isEnabled = true
+    view.addSubview(secondHotspot)
   }
 }
