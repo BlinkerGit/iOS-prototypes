@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="GjX-oK-K2l">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="98d-hB-WUe">
+            <objects>
+                <viewController id="i5W-de-a7R" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="zzs-fX-D2R">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J0z-kk-MuD">
+                                <rect key="frame" x="170" y="148" width="34" height="30"/>
+                                <state key="normal" title="Long"/>
+                                <connections>
+                                    <segue destination="X3U-BO-bO5" kind="show" id="2mn-ML-3AG"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nwQ-zd-kUi">
+                                <rect key="frame" x="168" y="215" width="38" height="30"/>
+                                <state key="normal" title="Short"/>
+                                <connections>
+                                    <segue destination="2cH-Nf-K4J" kind="show" id="Mqd-Uj-QLU"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="J0z-kk-MuD" firstAttribute="centerX" secondItem="Kjj-UX-mea" secondAttribute="centerX" id="1zB-Rq-aXa"/>
+                            <constraint firstItem="J0z-kk-MuD" firstAttribute="top" secondItem="Kjj-UX-mea" secondAttribute="top" constant="128" id="bO9-qf-54E"/>
+                            <constraint firstItem="nwQ-zd-kUi" firstAttribute="centerX" secondItem="J0z-kk-MuD" secondAttribute="centerX" id="dks-BF-NMe"/>
+                            <constraint firstItem="nwQ-zd-kUi" firstAttribute="top" secondItem="J0z-kk-MuD" secondAttribute="bottom" constant="37" id="xwE-Gu-tg7"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Kjj-UX-mea"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="uo5-Za-YlI"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="EEs-uW-Ky3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="591" y="-101"/>
+        </scene>
+        <!--Long-->
+        <scene sceneID="GLi-E8-9bh">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Long" id="X3U-BO-bO5" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bMT-tL-lbp" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1211" y="-221"/>
+        </scene>
+        <!--Short-->
+        <scene sceneID="kda-Qb-Aif">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Short" id="2cH-Nf-K4J" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dgP-mh-BNU" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1212" y="-126"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="eDv-yc-R9g">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" navigationBarHidden="YES" id="GjX-oK-K2l" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="tBl-Vv-mKS">
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="i5W-de-a7R" kind="relationship" relationship="rootViewController" id="3dk-Ra-aGd"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Z3s-Ak-FbZ" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-177.59999999999999" y="-95.352323838080963"/>
+        </scene>
+    </scenes>
+</document>

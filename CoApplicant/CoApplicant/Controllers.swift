@@ -1,7 +1,4 @@
 //
-//  PrototypeController.swift
-//  CoApplicant
-//
 //  Created by Ben Pilcher on 2/28/18.
 //  Copyright © 2018 Ben Pilcher. All rights reserved.
 //
@@ -57,6 +54,8 @@ class CrossFadeController: PrototypeController {
   }
 }
 
+// Add as many image views as you want, assign tags in order of presention, and then swipe down
+// to cycle through and show variants
 class ABController: PrototypeController {
 
   override func viewDidLoad() {
@@ -69,22 +68,23 @@ class ABController: PrototypeController {
     didSwipe()
   }
 
-  var imageViews: [UIImageView] {
-    var images: [UIImageView] = []
-    for child in view.subviews {
-      if child is UIImageView {
-        images.append(child as! UIImageView)
-      }
+  var hotspots: [UIButton] {
+    var views: [UIButton] = []
+    for child in (view.subviews.filter { $0 is UIButton }) {
+      views.append(child as! UIButton)
     }
-    return images
+    return views
   }
 
-  var index: Int = -1 {
-    didSet {
-      print("oldValue: \(oldValue)")
-      print("index: \(index)")
+  var imageViews: [UIImageView] {
+    var views: [UIImageView] = []
+    for child in (view.subviews.filter { $0 is UIImageView }) {
+      views.append(child as! UIImageView)
     }
+    return views
   }
+
+  var imageIndex: Int = -1
 
   @objc func didSwipe() {
     let variants = imageViews.sorted { $0.tag < $1.tag }
@@ -92,11 +92,10 @@ class ABController: PrototypeController {
       return
     }
 
-    index = index + 1
-    if index == variants.count {
-      index = 0
+    imageIndex = imageIndex + 1
+    if imageIndex == variants.count {
+      imageIndex = 0
     }
-    view.addSubview(variants[index])
-
+    view.addSubview(variants[imageIndex])
   }
 }

@@ -49,8 +49,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     (window as! MBFingerTipWindow).strokeColor = Color.blinkerBlue
     (window as! MBFingerTipWindow).alwaysShowTouches = true
 
-    let initialController = UIStoryboard(name: "Long", bundle: nil).instantiateInitialViewController()
-//  let initialController = UIStoryboard(name: "Short", bundle: nil).instantiateInitialViewController()
+    let initialController = UIStoryboard(name: "TableOfContents", bundle: nil).instantiateInitialViewController()
 
     window!.rootViewController = initialController
     window!.makeKeyAndVisible()
