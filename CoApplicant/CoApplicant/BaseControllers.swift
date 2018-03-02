@@ -55,7 +55,7 @@ class CrossFadeController: PrototypeController {
 }
 
 // Add as many image views as you want, assign tags in order of presention, and then swipe down
-// to cycle through and show variants
+// to cycle through and show variants. To 
 class ABController: PrototypeController {
 
   override func viewDidLoad() {
@@ -65,15 +65,18 @@ class ABController: PrototypeController {
     verticalSwipeGesture.direction = .down
     view.addGestureRecognizer(verticalSwipeGesture)
 
+    for button in hotspots {
+      button?.isEnabled = false
+    }
     didSwipe()
   }
 
-  var hotspots: [UIButton] {
+  var hotspots: [UIButton?] {
     var views: [UIButton] = []
     for child in (view.subviews.filter { $0 is UIButton }) {
       views.append(child as! UIButton)
     }
-    return views
+    return views.sorted { $0.tag < $1.tag }
   }
 
   var imageViews: [UIImageView] {
@@ -81,21 +84,31 @@ class ABController: PrototypeController {
     for child in (view.subviews.filter { $0 is UIImageView }) {
       views.append(child as! UIImageView)
     }
-    return views
+    return views.sorted { $0.tag < $1.tag }
   }
 
   var imageIndex: Int = -1
 
   @objc func didSwipe() {
-    let variants = imageViews.sorted { $0.tag < $1.tag }
-    guard !variants.isEmpty else {
+    guard !imageViews.isEmpty else {
       return
     }
 
     imageIndex = imageIndex + 1
-    if imageIndex == variants.count {
+    if imageIndex == imageViews.count {
       imageIndex = 0
     }
-    view.addSubview(variants[imageIndex])
+    let currentImageViews = imageViews[imageIndex]
+    currentImageViews.isHidden = false
+    view.addSubview(currentImageViews)
+
+    for button in hotspots {
+      button?.isEnabled = false
+    }
+
+    if let currentHotspot = hotspots[imageIndex] {
+      currentHotspot.isEnabled = true
+      view.addSubview(currentHotspot)
+    }
   }
 }

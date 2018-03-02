@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="pPI-Vi-W7K">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Controller-->
+        <scene sceneID="qmO-Az-LjS">
+            <objects>
+                <viewController id="pPI-Vi-W7K" customClass="ABController" customModule="CoApplicant" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ULo-xm-gLQ">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" tag="1" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="welcomeMat" translatesAutoresizingMaskIntoConstraints="NO" id="IEx-0B-k6E">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="co-applicant-todos-tab-crazy" translatesAutoresizingMaskIntoConstraints="NO" id="wAj-VJ-ymR">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R8l-DY-5m5">
+                                <rect key="frame" x="78" y="393" width="219" height="42"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="219" id="ub7-mk-Uj9"/>
+                                    <constraint firstAttribute="height" constant="42" id="vf1-XB-Vmr"/>
+                                </constraints>
+                                <connections>
+                                    <segue destination="VDU-sm-4Lp" kind="show" id="eoP-fh-y2h"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="R8l-DY-5m5" firstAttribute="centerX" secondItem="USJ-C8-Jwc" secondAttribute="centerX" id="BgE-br-E1b"/>
+                            <constraint firstItem="USJ-C8-Jwc" firstAttribute="trailing" secondItem="IEx-0B-k6E" secondAttribute="trailing" id="EEk-iS-Wj1"/>
+                            <constraint firstItem="IEx-0B-k6E" firstAttribute="top" secondItem="USJ-C8-Jwc" secondAttribute="top" constant="-20" id="JQe-Ie-6QU"/>
+                            <constraint firstItem="wAj-VJ-ymR" firstAttribute="top" secondItem="IEx-0B-k6E" secondAttribute="top" id="Ozj-xP-ZHt"/>
+                            <constraint firstItem="wAj-VJ-ymR" firstAttribute="bottom" secondItem="USJ-C8-Jwc" secondAttribute="bottom" id="QFk-B9-O1c"/>
+                            <constraint firstItem="USJ-C8-Jwc" firstAttribute="bottom" secondItem="IEx-0B-k6E" secondAttribute="bottom" id="SUc-5A-Y1o"/>
+                            <constraint firstItem="wAj-VJ-ymR" firstAttribute="leading" secondItem="IEx-0B-k6E" secondAttribute="leading" id="gKb-cv-heu"/>
+                            <constraint firstItem="IEx-0B-k6E" firstAttribute="leading" secondItem="USJ-C8-Jwc" secondAttribute="leading" id="iB7-oR-A5B"/>
+                            <constraint firstItem="USJ-C8-Jwc" firstAttribute="bottom" secondItem="R8l-DY-5m5" secondAttribute="bottom" constant="232" id="s6v-xl-eeb"/>
+                            <constraint firstItem="wAj-VJ-ymR" firstAttribute="trailing" secondItem="IEx-0B-k6E" secondAttribute="trailing" id="u3E-fX-zf9"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="USJ-C8-Jwc"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="VtN-8Q-Yhk"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="epA-CB-YYP" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1876" y="3764.1679160419794"/>
+        </scene>
+        <!--Prototype Controller-->
+        <scene sceneID="amI-BZ-PBy">
+            <objects>
+                <viewController id="VDU-sm-4Lp" customClass="PrototypeController" customModule="CoApplicant" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Lxc-5T-XgO">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="detailtodos" translatesAutoresizingMaskIntoConstraints="NO" id="vV1-H8-eUM">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="vV1-H8-eUM" firstAttribute="leading" secondItem="zTX-3s-Zfc" secondAttribute="leading" id="1LC-sO-QXf"/>
+                            <constraint firstItem="zTX-3s-Zfc" firstAttribute="top" secondItem="vV1-H8-eUM" secondAttribute="top" constant="20" id="Ax1-6g-Cyj"/>
+                            <constraint firstItem="zTX-3s-Zfc" firstAttribute="bottom" secondItem="vV1-H8-eUM" secondAttribute="bottom" id="nc4-EA-95w"/>
+                            <constraint firstItem="zTX-3s-Zfc" firstAttribute="trailing" secondItem="vV1-H8-eUM" secondAttribute="trailing" id="wm2-1A-K6h"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="zTX-3s-Zfc"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RnU-pJ-VQV" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="2696.8000000000002" y="3763.2683658170918"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="co-applicant-todos-tab-crazy" width="414" height="736"/>
+        <image name="detailtodos" width="414" height="736"/>
+        <image name="welcomeMat" width="416" height="736"/>
+    </resources>
+</document>
