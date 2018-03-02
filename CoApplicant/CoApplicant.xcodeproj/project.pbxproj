@@ -7,8 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		3A81FDE02049D4090030A8F7 /* Long.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A81FDDF2049D4090030A8F7 /* Long.storyboard */; };
 		3AF908542047687700F848E7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AF908532047687700F848E7 /* AppDelegate.swift */; };
-		3AF908592047687700F848E7 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3AF908572047687700F848E7 /* Main.storyboard */; };
+		3AF908592047687700F848E7 /* Short.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3AF908572047687700F848E7 /* Short.storyboard */; };
 		3AF9085B2047687700F848E7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3AF9085A2047687700F848E7 /* Assets.xcassets */; };
 		3AF9085E2047687700F848E7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3AF9085C2047687700F848E7 /* LaunchScreen.storyboard */; };
 		3AF908662047803500F848E7 /* PrototypeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AF908652047803500F848E7 /* PrototypeController.swift */; };
@@ -17,9 +18,10 @@
 
 /* Begin PBXFileReference section */
 		391A1F8813AF69B6B1CB0EDC /* Pods-CoApplicant.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoApplicant.release.xcconfig"; path = "Pods/Target Support Files/Pods-CoApplicant/Pods-CoApplicant.release.xcconfig"; sourceTree = "<group>"; };
+		3A81FDDF2049D4090030A8F7 /* Long.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Long.storyboard; sourceTree = "<group>"; };
 		3AF908502047687700F848E7 /* CoApplicant.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoApplicant.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3AF908532047687700F848E7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		3AF908582047687700F848E7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3AF908582047687700F848E7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Short.storyboard; sourceTree = "<group>"; };
 		3AF9085A2047687700F848E7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3AF9085D2047687700F848E7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3AF9085F2047687700F848E7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -72,7 +74,8 @@
 			children = (
 				3AF908532047687700F848E7 /* AppDelegate.swift */,
 				3AF908652047803500F848E7 /* PrototypeController.swift */,
-				3AF908572047687700F848E7 /* Main.storyboard */,
+				3A81FDDF2049D4090030A8F7 /* Long.storyboard */,
+				3AF908572047687700F848E7 /* Short.storyboard */,
 				3AF9085A2047687700F848E7 /* Assets.xcassets */,
 				3AF9085C2047687700F848E7 /* LaunchScreen.storyboard */,
 				3AF9085F2047687700F848E7 /* Info.plist */,
@@ -151,8 +154,9 @@
 			buildActionMask = 2147483647;
 			files = (
 				3AF9085E2047687700F848E7 /* LaunchScreen.storyboard in Resources */,
+				3A81FDE02049D4090030A8F7 /* Long.storyboard in Resources */,
 				3AF9085B2047687700F848E7 /* Assets.xcassets in Resources */,
-				3AF908592047687700F848E7 /* Main.storyboard in Resources */,
+				3AF908592047687700F848E7 /* Short.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -225,12 +229,12 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		3AF908572047687700F848E7 /* Main.storyboard */ = {
+		3AF908572047687700F848E7 /* Short.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
 				3AF908582047687700F848E7 /* Base */,
 			);
-			name = Main.storyboard;
+			name = Short.storyboard;
 			sourceTree = "<group>";
 		};
 		3AF9085C2047687700F848E7 /* LaunchScreen.storyboard */ = {
