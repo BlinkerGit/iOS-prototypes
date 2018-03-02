@@ -935,10 +935,10 @@
             </objects>
             <point key="canvasLocation" x="850" y="4367"/>
         </scene>
-        <!--Prototype Controller-->
+        <!--Controller-->
         <scene sceneID="29D-D9-IQv">
             <objects>
-                <viewController id="3dX-fI-uGr" customClass="PrototypeController" customModule="CoApplicant" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="3dX-fI-uGr" customClass="ABController" customModule="CoApplicant" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="uwj-c7-Pbk">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -946,12 +946,19 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="todos" translatesAutoresizingMaskIntoConstraints="NO" id="Ry3-NI-6TS">
                                 <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                             </imageView>
+                            <imageView userInteractionEnabled="NO" tag="1" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="co-applicant-todos-tab-crazy" translatesAutoresizingMaskIntoConstraints="NO" id="WZt-7p-ICc">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="WZt-7p-ICc" firstAttribute="top" secondItem="Ry3-NI-6TS" secondAttribute="top" id="0aI-Hg-cF6"/>
                             <constraint firstItem="Ry3-NI-6TS" firstAttribute="top" secondItem="uJa-CZ-AQf" secondAttribute="top" constant="-20" id="2E5-qc-mn9"/>
                             <constraint firstItem="uJa-CZ-AQf" firstAttribute="trailing" secondItem="Ry3-NI-6TS" secondAttribute="trailing" id="2mD-IT-4Fs"/>
+                            <constraint firstItem="WZt-7p-ICc" firstAttribute="bottom" secondItem="uJa-CZ-AQf" secondAttribute="bottom" id="5l8-r8-5Af"/>
+                            <constraint firstItem="WZt-7p-ICc" firstAttribute="trailing" secondItem="Ry3-NI-6TS" secondAttribute="trailing" id="8kV-KO-rV1"/>
                             <constraint firstItem="uJa-CZ-AQf" firstAttribute="bottom" secondItem="Ry3-NI-6TS" secondAttribute="bottom" id="SdO-v2-VpW"/>
+                            <constraint firstItem="WZt-7p-ICc" firstAttribute="leading" secondItem="Ry3-NI-6TS" secondAttribute="leading" id="fK4-5T-AtM"/>
                             <constraint firstItem="Ry3-NI-6TS" firstAttribute="leading" secondItem="uJa-CZ-AQf" secondAttribute="leading" id="q1d-6C-Rbi"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="uJa-CZ-AQf"/>
@@ -983,6 +990,7 @@
         <image name="7-refiSplashScreen" width="414" height="736"/>
         <image name="8-confirmVehicleDetails" width="414" height="736"/>
         <image name="9-vehicleDetailsVerifying" width="414" height="736"/>
+        <image name="co-applicant-todos-tab-crazy" width="414" height="736"/>
         <image name="combinedIncomePhone" width="1243" height="2209"/>
         <image name="declined-try-again" width="414" height="736"/>
         <image name="jointWithCurrentAddress" width="414" height="736"/>

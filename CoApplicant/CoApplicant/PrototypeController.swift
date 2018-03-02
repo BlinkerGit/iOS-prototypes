@@ -8,6 +8,7 @@
 
 import UIKit
 
+// Base controller that provides hidden 'back' button and shake-to-restart
 class PrototypeController: UIViewController {
 
   override func viewDidLoad() {
@@ -36,6 +37,7 @@ class PrototypeController: UIViewController {
 
 }
 
+// Use this for controllers that have a state change (ie driver's license capture -> image captured)
 class CrossFadeController: PrototypeController {
 
   @IBOutlet weak var first: UIImageView!
@@ -52,5 +54,49 @@ class CrossFadeController: PrototypeController {
     view.addSubview(second)
     secondHotspot.isEnabled = true
     view.addSubview(secondHotspot)
+  }
+}
+
+class ABController: PrototypeController {
+
+  override func viewDidLoad() {
+    super.viewDidLoad()
+
+    let verticalSwipeGesture = UISwipeGestureRecognizer(target: self, action: #selector(self.didSwipe))
+    verticalSwipeGesture.direction = .down
+    view.addGestureRecognizer(verticalSwipeGesture)
+
+    didSwipe()
+  }
+
+  var imageViews: [UIImageView] {
+    var images: [UIImageView] = []
+    for child in view.subviews {
+      if child is UIImageView {
+        images.append(child as! UIImageView)
+      }
+    }
+    return images
+  }
+
+  var index: Int = -1 {
+    didSet {
+      print("oldValue: \(oldValue)")
+      print("index: \(index)")
+    }
+  }
+
+  @objc func didSwipe() {
+    let variants = imageViews.sorted { $0.tag < $1.tag }
+    guard !variants.isEmpty else {
+      return
+    }
+
+    index = index + 1
+    if index == variants.count {
+      index = 0
+    }
+    view.addSubview(variants[index])
+
   }
 }
