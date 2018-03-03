@@ -8,6 +8,8 @@ import UIKit
 // Base controller that provides hidden 'back' button and shake-to-restart
 class PrototypeController: UIViewController {
 
+  var imageIndex: Int = -1
+
   override func viewDidLoad() {
     super.viewDidLoad()
 
@@ -32,64 +34,7 @@ class PrototypeController: UIViewController {
     }
   }
 
-}
-
-// Use this for controllers that have a state change (ie driver's license capture -> image captured)
-class CrossFadeController: PrototypeController {
-
-  @IBOutlet weak var first: UIImageView!
-  @IBOutlet weak var second: UIImageView!
-  @IBOutlet weak var secondHotspot: UIButton!
-
-  override func viewDidLoad() {
-    super.viewDidLoad()
-
-    secondHotspot.isEnabled = false
-  }
-
-  @IBAction func tappedHotspot(_ sender: Any) {
-    view.addSubview(second)
-    secondHotspot.isEnabled = true
-    view.addSubview(secondHotspot)
-  }
-}
-
-// Add as many image views as you want, assign tags in order of presention, and then swipe down
-// to cycle through and show variants. To 
-class ABController: PrototypeController {
-
-  override func viewDidLoad() {
-    super.viewDidLoad()
-
-    let verticalSwipeGesture = UISwipeGestureRecognizer(target: self, action: #selector(self.didSwipe))
-    verticalSwipeGesture.direction = .down
-    view.addGestureRecognizer(verticalSwipeGesture)
-
-    for button in hotspots {
-      button?.isEnabled = false
-    }
-    didSwipe()
-  }
-
-  var hotspots: [UIButton?] {
-    var views: [UIButton] = []
-    for child in (view.subviews.filter { $0 is UIButton }) {
-      views.append(child as! UIButton)
-    }
-    return views.sorted { $0.tag < $1.tag }
-  }
-
-  var imageViews: [UIImageView] {
-    var views: [UIImageView] = []
-    for child in (view.subviews.filter { $0 is UIImageView }) {
-      views.append(child as! UIImageView)
-    }
-    return views.sorted { $0.tag < $1.tag }
-  }
-
-  var imageIndex: Int = -1
-
-  @objc func didSwipe() {
+  func goToNext() {
     guard !imageViews.isEmpty else {
       return
     }
@@ -110,5 +55,82 @@ class ABController: PrototypeController {
       currentHotspot.isEnabled = true
       view.addSubview(currentHotspot)
     }
+  }
+
+  var hotspots: [UIButton?] {
+    var views: [UIButton] = []
+    for child in (view.subviews.filter { $0 is UIButton }) {
+      views.append(child as! UIButton)
+    }
+    return views.sorted { $0.tag < $1.tag }
+  }
+
+  var imageViews: [UIImageView] {
+    var views: [UIImageView] = []
+    for child in (view.subviews.filter { $0 is UIImageView }) {
+      views.append(child as! UIImageView)
+    }
+    return views.sorted { $0.tag < $1.tag }
+  }
+}
+
+// Simulate filling in a form (or cause a state change) by tapping
+class FormController: PrototypeController {
+
+  override func viewDidLoad() {
+    super.viewDidLoad()
+
+    let tapGesture = UITapGestureRecognizer(target: self, action: #selector(self.didTap))
+    imageViews.first?.isUserInteractionEnabled = true
+    imageViews.first?.addGestureRecognizer(tapGesture)
+
+    goToNext()
+  }
+
+  @objc func didTap() {
+    goToNext()
+  }
+}
+
+// Add as many image views as you want, assign tags in order of presention, and then swipe down
+// to cycle through and show variants. To
+class ABController: PrototypeController {
+
+  override func viewDidLoad() {
+    super.viewDidLoad()
+
+    let verticalSwipeGesture = UISwipeGestureRecognizer(target: self, action: #selector(self.didSwipe))
+    verticalSwipeGesture.direction = .down
+    view.addGestureRecognizer(verticalSwipeGesture)
+
+    for button in hotspots {
+      button?.isEnabled = false
+    }
+
+    goToNext()
+  }
+
+  @objc func didSwipe() {
+    goToNext()
+  }
+}
+
+// DEPRECATED: use `ABController` instead.
+class CrossFadeController: PrototypeController {
+
+  @IBOutlet weak var first: UIImageView!
+  @IBOutlet weak var second: UIImageView!
+  @IBOutlet weak var secondHotspot: UIButton!
+
+  override func viewDidLoad() {
+    super.viewDidLoad()
+
+    secondHotspot.isEnabled = false
+  }
+
+  @IBAction func tappedHotspot(_ sender: Any) {
+    view.addSubview(second)
+    secondHotspot.isEnabled = true
+    view.addSubview(secondHotspot)
   }
 }

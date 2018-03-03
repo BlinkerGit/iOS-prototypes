@@ -160,18 +160,21 @@
             </objects>
             <point key="canvasLocation" x="-354.39999999999998" y="871.21439280359823"/>
         </scene>
-        <!--Prototype Controller-->
+        <!--Form Controller-->
         <scene sceneID="0Du-AD-181">
             <objects>
-                <viewController id="wxb-u0-Cv9" customClass="PrototypeController" customModule="CoApplicant" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="wxb-u0-Cv9" customClass="FormController" customModule="CoApplicant" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="A7L-h0-LN3">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="5-SignUp" translatesAutoresizingMaskIntoConstraints="NO" id="KdU-Jo-d73">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="5-SignUp-whiteout" translatesAutoresizingMaskIntoConstraints="NO" id="KdU-Jo-d73">
                                 <rect key="frame" x="0.0" y="20" width="375" height="647"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yp7-y2-Uni">
+                            <imageView userInteractionEnabled="NO" tag="1" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="5-SignUp" translatesAutoresizingMaskIntoConstraints="NO" id="xze-T7-509">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                            </imageView>
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yp7-y2-Uni">
                                 <rect key="frame" x="16" y="617" width="348" height="41"/>
                                 <connections>
                                     <segue destination="Xx1-ch-mny" kind="show" id="yxZ-au-HWp"/>
@@ -181,12 +184,16 @@
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="yp7-y2-Uni" firstAttribute="top" secondItem="36P-ar-gma" secondAttribute="top" constant="597" id="2kd-su-7ez"/>
+                            <constraint firstItem="xze-T7-509" firstAttribute="bottom" secondItem="KdU-Jo-d73" secondAttribute="bottom" id="C2k-An-a3a"/>
+                            <constraint firstItem="xze-T7-509" firstAttribute="trailing" secondItem="KdU-Jo-d73" secondAttribute="trailing" id="CKY-bv-0QY"/>
                             <constraint firstItem="36P-ar-gma" firstAttribute="trailing" secondItem="yp7-y2-Uni" secondAttribute="trailing" constant="11" id="LCI-nR-3Wv"/>
                             <constraint firstItem="36P-ar-gma" firstAttribute="bottom" secondItem="yp7-y2-Uni" secondAttribute="bottom" constant="9" id="TZQ-2d-awH"/>
                             <constraint firstItem="KdU-Jo-d73" firstAttribute="leading" secondItem="36P-ar-gma" secondAttribute="leading" id="Wiv-to-mSr"/>
                             <constraint firstItem="yp7-y2-Uni" firstAttribute="leading" secondItem="A7L-h0-LN3" secondAttribute="leadingMargin" id="Xes-oV-K5X"/>
                             <constraint firstItem="KdU-Jo-d73" firstAttribute="top" secondItem="36P-ar-gma" secondAttribute="top" id="ZM6-Jf-2zQ"/>
                             <constraint firstItem="36P-ar-gma" firstAttribute="bottom" secondItem="KdU-Jo-d73" secondAttribute="bottom" id="c0K-gL-FGk"/>
+                            <constraint firstItem="xze-T7-509" firstAttribute="top" secondItem="KdU-Jo-d73" secondAttribute="top" id="e4Z-lZ-Y8u"/>
+                            <constraint firstItem="xze-T7-509" firstAttribute="leading" secondItem="KdU-Jo-d73" secondAttribute="leading" id="rUW-KJ-Vuh"/>
                             <constraint firstItem="36P-ar-gma" firstAttribute="trailing" secondItem="KdU-Jo-d73" secondAttribute="trailing" id="wVi-hm-lt7"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="36P-ar-gma"/>
@@ -537,15 +544,18 @@
             </objects>
             <point key="canvasLocation" x="1121" y="2245"/>
         </scene>
-        <!--Prototype Controller-->
+        <!--Form Controller-->
         <scene sceneID="jsW-Ai-L57">
             <objects>
-                <viewController id="XqA-ET-FsX" customClass="PrototypeController" customModule="CoApplicant" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="XqA-ET-FsX" customClass="FormController" customModule="CoApplicant" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="NwY-Nw-WG3">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="20-coApp_manualDataEntry" translatesAutoresizingMaskIntoConstraints="NO" id="8kG-ro-dFK">
+                            <imageView userInteractionEnabled="NO" alpha="0.94999998807907104" tag="1" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="20-coApp_manualDataEntry" translatesAutoresizingMaskIntoConstraints="NO" id="JWu-zP-3bm">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="20-coApp_manualDataEntry-whiteout" translatesAutoresizingMaskIntoConstraints="NO" id="qrX-76-O1l">
                                 <rect key="frame" x="0.0" y="20" width="375" height="647"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XKG-h0-gXJ">
@@ -557,14 +567,18 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="8kG-ro-dFK" firstAttribute="top" secondItem="BKh-ZQ-yWD" secondAttribute="top" id="0HQ-FY-KyB"/>
                             <constraint firstItem="XKG-h0-gXJ" firstAttribute="top" secondItem="BKh-ZQ-yWD" secondAttribute="top" constant="599" id="Btf-yB-FPc"/>
-                            <constraint firstItem="XKG-h0-gXJ" firstAttribute="leading" secondItem="8kG-ro-dFK" secondAttribute="leading" id="Crv-Kh-EQF"/>
-                            <constraint firstItem="BKh-ZQ-yWD" firstAttribute="trailing" secondItem="8kG-ro-dFK" secondAttribute="trailing" id="N91-bt-1YF"/>
-                            <constraint firstItem="XKG-h0-gXJ" firstAttribute="trailing" secondItem="8kG-ro-dFK" secondAttribute="trailing" id="Ode-iN-JLp"/>
+                            <constraint firstItem="qrX-76-O1l" firstAttribute="leading" secondItem="JWu-zP-3bm" secondAttribute="leading" id="Dme-gf-RYo"/>
+                            <constraint firstItem="qrX-76-O1l" firstAttribute="top" secondItem="JWu-zP-3bm" secondAttribute="top" id="Lfq-Y6-kNy"/>
+                            <constraint firstAttribute="trailing" secondItem="qrX-76-O1l" secondAttribute="trailing" id="NHs-zd-GJM"/>
                             <constraint firstItem="XKG-h0-gXJ" firstAttribute="bottom" secondItem="BKh-ZQ-yWD" secondAttribute="bottom" constant="-6" id="SgF-2T-kt0"/>
-                            <constraint firstItem="8kG-ro-dFK" firstAttribute="leading" secondItem="BKh-ZQ-yWD" secondAttribute="leading" id="Ydh-uO-aSb"/>
-                            <constraint firstItem="BKh-ZQ-yWD" firstAttribute="bottom" secondItem="8kG-ro-dFK" secondAttribute="bottom" id="eMS-vm-xym"/>
+                            <constraint firstItem="qrX-76-O1l" firstAttribute="leading" secondItem="NwY-Nw-WG3" secondAttribute="leading" id="VOx-XN-dt9"/>
+                            <constraint firstItem="JWu-zP-3bm" firstAttribute="trailing" secondItem="XKG-h0-gXJ" secondAttribute="trailing" id="Yjb-fF-JWN"/>
+                            <constraint firstItem="JWu-zP-3bm" firstAttribute="bottom" secondItem="qrX-76-O1l" secondAttribute="bottom" id="YsU-BE-qqB"/>
+                            <constraint firstItem="JWu-zP-3bm" firstAttribute="top" secondItem="BKh-ZQ-yWD" secondAttribute="top" id="ZJq-4d-uJU"/>
+                            <constraint firstItem="JWu-zP-3bm" firstAttribute="leading" secondItem="XKG-h0-gXJ" secondAttribute="leading" id="bi9-Oe-Yfg"/>
+                            <constraint firstItem="qrX-76-O1l" firstAttribute="bottom" secondItem="BKh-ZQ-yWD" secondAttribute="bottom" id="lo0-6r-Yj4"/>
+                            <constraint firstItem="qrX-76-O1l" firstAttribute="trailing" secondItem="XKG-h0-gXJ" secondAttribute="trailing" id="rGx-po-0bE"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="BKh-ZQ-yWD"/>
                     </view>
@@ -937,12 +951,14 @@
         <image name="19-primaryOverview" width="1242" height="2208"/>
         <image name="2-tapLowerMyPayment_LoggedOut" width="414" height="736"/>
         <image name="20-coApp_manualDataEntry" width="414" height="736"/>
+        <image name="20-coApp_manualDataEntry-whiteout" width="414" height="736"/>
         <image name="24-coApp_SSN" width="414" height="736"/>
         <image name="26-checkingCredit" width="414" height="736"/>
         <image name="27preDetailsCheckboxScreen-1" width="1242" height="2208"/>
         <image name="3-snapVehicle_LoggedOut" width="414" height="736"/>
         <image name="4-tapIntoRefiCell_LoggedOut copy" width="414" height="736"/>
         <image name="5-SignUp" width="414" height="736"/>
+        <image name="5-SignUp-whiteout" width="414" height="736"/>
         <image name="6-tapintoRefi_loggedIn" width="414" height="736"/>
         <image name="7-refiSplashScreen" width="414" height="736"/>
         <image name="8-confirmVehicleDetails" width="414" height="736"/>
