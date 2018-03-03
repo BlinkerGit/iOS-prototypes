@@ -9,14 +9,19 @@ import UIKit
 class PrototypeController: UIViewController {
 
   var imageIndex: Int = -1
+  let hiddenBackButton = UIButton()
 
   override func viewDidLoad() {
     super.viewDidLoad()
 
-    let hiddenBackButton = UIButton()
-    hiddenBackButton.frame = CGRect.init(x: 0.0, y: 0.0, width: 100.0, height: 60.0)
+    hiddenBackButton.frame = CGRect(x: 0.0, y: 0.0, width: 100.0, height: 60.0)
     view.addSubview(hiddenBackButton)
     hiddenBackButton.addTarget(self, action: #selector(self.goBack), for: .touchUpInside)
+  }
+
+  override func viewDidAppear(_ animated: Bool) {
+    super.viewDidAppear(animated)
+    view.addSubview(hiddenBackButton)
   }
 
   @objc
@@ -51,24 +56,37 @@ class PrototypeController: UIViewController {
       button?.isEnabled = false
     }
 
-    if let currentHotspot = hotspots[imageIndex] {
-      currentHotspot.isEnabled = true
-      view.addSubview(currentHotspot)
+    if let hotspot = hotspots[safe: imageIndex], let button = hotspot {
+      button.isEnabled = true
+      view.addSubview(button)
     }
+
+    view.addSubview(hiddenBackButton)
   }
 
   var hotspots: [UIButton?] {
-    var views: [UIButton] = []
-    for child in (view.subviews.filter { $0 is UIButton }) {
-      views.append(child as! UIButton)
+    var hotspotButtons: [UIButton] = []
+    for button in (view.subviews.filter { $0 is UIButton && $0 != hiddenBackButton }) {
+      hotspotButtons.append(button as! UIButton)
     }
-    return views.sorted { $0.tag < $1.tag }
+
+    var values: [UIButton?] = []
+    for (i, _) in imageViews.enumerated() {
+      if let hotspot = (hotspotButtons.filter {$0.tag == i }.first) {
+        values.append(hotspot)
+      } else {
+        values.append(nil)
+      }
+    }
+
+    return values
   }
 
   var imageViews: [UIImageView] {
     var views: [UIImageView] = []
     for child in (view.subviews.filter { $0 is UIImageView }) {
       views.append(child as! UIImageView)
+      child.isUserInteractionEnabled = true
     }
     return views.sorted { $0.tag < $1.tag }
   }
@@ -81,8 +99,7 @@ class FormController: PrototypeController {
     super.viewDidLoad()
 
     let tapGesture = UITapGestureRecognizer(target: self, action: #selector(self.didTap))
-    imageViews.first?.isUserInteractionEnabled = true
-    imageViews.first?.addGestureRecognizer(tapGesture)
+    view.addGestureRecognizer(tapGesture)
 
     goToNext()
   }
@@ -132,5 +149,11 @@ class CrossFadeController: PrototypeController {
     view.addSubview(second)
     secondHotspot.isEnabled = true
     view.addSubview(secondHotspot)
+  }
+}
+
+extension Array {
+  subscript(safe index: Int) -> Element? {
+    return Int(index) < count ? self[Int(index)] : nil
   }
 }

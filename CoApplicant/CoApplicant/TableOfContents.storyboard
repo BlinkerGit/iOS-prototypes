@@ -19,33 +19,41 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J0z-kk-MuD">
-                                <rect key="frame" x="143" y="113" width="88" height="30"/>
+                                <rect key="frame" x="143" y="151" width="88" height="30"/>
                                 <state key="normal" title="Long version"/>
                                 <connections>
                                     <segue destination="X3U-BO-bO5" kind="show" id="2mn-ML-3AG"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nwQ-zd-kUi">
-                                <rect key="frame" x="141" y="151" width="92" height="30"/>
+                                <rect key="frame" x="141" y="189" width="92" height="30"/>
                                 <state key="normal" title="Short version"/>
                                 <connections>
                                     <segue destination="2cH-Nf-K4J" kind="show" id="Mqd-Uj-QLU"/>
                                 </connections>
                             </button>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Co-Applicant Prototypes" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gey-bp-j2W">
-                                <rect key="frame" x="93" y="62" width="189" height="21"/>
+                                <rect key="frame" x="93" y="100" width="189" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="  Copyright © 2018 Blinker. All rights reserved." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="2Sy-sr-ugq">
+                                <rect key="frame" x="47.5" y="639.5" width="280.5" height="16"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="13"/>
+                                <color key="textColor" red="0.64313725489999995" green="0.65098039220000004" blue="0.66666666669999997" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="J0z-kk-MuD" firstAttribute="centerX" secondItem="Kjj-UX-mea" secondAttribute="centerX" id="1zB-Rq-aXa"/>
-                            <constraint firstItem="Gey-bp-j2W" firstAttribute="top" secondItem="Kjj-UX-mea" secondAttribute="top" constant="42" id="8Yo-eT-MBq"/>
+                            <constraint firstItem="2Sy-sr-ugq" firstAttribute="centerX" secondItem="Kjj-UX-mea" secondAttribute="centerX" id="7Te-h3-zvw"/>
+                            <constraint firstItem="Gey-bp-j2W" firstAttribute="top" secondItem="Kjj-UX-mea" secondAttribute="top" constant="80" id="8Yo-eT-MBq"/>
                             <constraint firstItem="J0z-kk-MuD" firstAttribute="top" secondItem="Gey-bp-j2W" secondAttribute="bottom" constant="30" id="Cch-01-XBG"/>
                             <constraint firstItem="Gey-bp-j2W" firstAttribute="centerX" secondItem="Kjj-UX-mea" secondAttribute="centerX" id="bcB-cm-VkX"/>
                             <constraint firstItem="nwQ-zd-kUi" firstAttribute="centerX" secondItem="J0z-kk-MuD" secondAttribute="centerX" id="dks-BF-NMe"/>
+                            <constraint firstItem="Kjj-UX-mea" firstAttribute="bottom" secondItem="2Sy-sr-ugq" secondAttribute="bottom" constant="11.5" id="hHp-hT-9qb"/>
                             <constraint firstItem="nwQ-zd-kUi" firstAttribute="top" secondItem="J0z-kk-MuD" secondAttribute="bottom" constant="8" id="xwE-Gu-tg7"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Kjj-UX-mea"/>
