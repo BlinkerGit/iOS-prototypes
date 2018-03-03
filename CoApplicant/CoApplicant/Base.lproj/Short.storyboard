@@ -470,18 +470,21 @@
             </objects>
             <point key="canvasLocation" x="-354" y="2245"/>
         </scene>
-        <!--Prototype Controller-->
+        <!--Form Controller-->
         <scene sceneID="NFR-Di-H33">
             <objects>
-                <viewController id="Wbm-C0-Y6B" customClass="PrototypeController" customModule="CoApplicant" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="Wbm-C0-Y6B" customClass="FormController" customModule="CoApplicant" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="SwI-dB-g2q">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="14-manualDataEntry" translatesAutoresizingMaskIntoConstraints="NO" id="KR8-dH-GJk">
+                            <imageView userInteractionEnabled="NO" tag="1" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="14-manualDataEntry" translatesAutoresizingMaskIntoConstraints="NO" id="KR8-dH-GJk">
                                 <rect key="frame" x="0.0" y="20" width="375" height="647"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LfK-VK-GVK">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="14-manualDataEntry-whiteout" translatesAutoresizingMaskIntoConstraints="NO" id="TMh-Kr-53D">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                            </imageView>
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LfK-VK-GVK">
                                 <rect key="frame" x="0.0" y="625" width="375" height="42"/>
                                 <connections>
                                     <segue destination="zC4-Sa-KgP" kind="show" id="cpC-Wg-Uy6"/>
@@ -490,10 +493,14 @@
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
+                            <constraint firstItem="TMh-Kr-53D" firstAttribute="top" secondItem="KR8-dH-GJk" secondAttribute="top" id="4my-49-Xk3"/>
                             <constraint firstItem="KR8-dH-GJk" firstAttribute="leading" secondItem="RJ0-Ze-5oM" secondAttribute="leading" id="Awg-c8-4RS"/>
+                            <constraint firstItem="TMh-Kr-53D" firstAttribute="leading" secondItem="LfK-VK-GVK" secondAttribute="leading" id="BXh-BX-7IW"/>
                             <constraint firstItem="LfK-VK-GVK" firstAttribute="top" secondItem="RJ0-Ze-5oM" secondAttribute="top" constant="605" id="CvG-dc-UDa"/>
+                            <constraint firstItem="TMh-Kr-53D" firstAttribute="trailing" secondItem="KR8-dH-GJk" secondAttribute="trailing" id="PZQ-YS-c0P"/>
                             <constraint firstItem="LfK-VK-GVK" firstAttribute="trailing" secondItem="KR8-dH-GJk" secondAttribute="trailing" id="RLh-r2-oRO"/>
                             <constraint firstItem="RJ0-Ze-5oM" firstAttribute="trailing" secondItem="KR8-dH-GJk" secondAttribute="trailing" id="SWT-jX-yFp"/>
+                            <constraint firstItem="TMh-Kr-53D" firstAttribute="bottom" secondItem="LfK-VK-GVK" secondAttribute="bottom" id="dTx-iZ-k4U"/>
                             <constraint firstItem="RJ0-Ze-5oM" firstAttribute="bottom" secondItem="KR8-dH-GJk" secondAttribute="bottom" id="fpv-2c-wGL"/>
                             <constraint firstItem="LfK-VK-GVK" firstAttribute="bottom" secondItem="RJ0-Ze-5oM" secondAttribute="bottom" id="iE0-N2-wlo"/>
                             <constraint firstItem="LfK-VK-GVK" firstAttribute="leading" secondItem="KR8-dH-GJk" secondAttribute="leading" id="xtL-rE-81a"/>
@@ -793,10 +800,10 @@
             </objects>
             <point key="canvasLocation" x="1678" y="3724"/>
         </scene>
-        <!--Prototype Controller-->
+        <!--Form Controller-->
         <scene sceneID="xpB-ky-tdA">
             <objects>
-                <viewController id="dEa-MZ-qD5" customClass="PrototypeController" customModule="CoApplicant" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="dEa-MZ-qD5" customClass="FormController" customModule="CoApplicant" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="2Ih-Q8-aOp">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -804,7 +811,10 @@
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="27preDetailsCheckboxScreen-1" translatesAutoresizingMaskIntoConstraints="NO" id="bVa-WI-nq3">
                                 <rect key="frame" x="0.0" y="20" width="375" height="647"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z71-jv-LHx">
+                            <imageView userInteractionEnabled="NO" tag="1" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="27preDetailsCheckboxScreen-whiteout" translatesAutoresizingMaskIntoConstraints="NO" id="YNB-21-GtK">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                            </imageView>
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Z71-jv-LHx">
                                 <rect key="frame" x="0.0" y="625" width="375" height="42"/>
                                 <connections>
                                     <segue destination="FpX-LN-1Vg" kind="show" id="4a4-iH-YNj"/>
@@ -814,10 +824,14 @@
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="Z71-jv-LHx" firstAttribute="leading" secondItem="bVa-WI-nq3" secondAttribute="leading" id="1vi-px-Vma"/>
+                            <constraint firstItem="YNB-21-GtK" firstAttribute="top" secondItem="WVq-Xm-Iv6" secondAttribute="top" id="2Ch-kc-wPi"/>
+                            <constraint firstItem="YNB-21-GtK" firstAttribute="leading" secondItem="bVa-WI-nq3" secondAttribute="leading" id="A2D-Bw-fij"/>
                             <constraint firstItem="WVq-Xm-Iv6" firstAttribute="bottom" secondItem="bVa-WI-nq3" secondAttribute="bottom" id="Bl2-vW-Dqq"/>
                             <constraint firstItem="Z71-jv-LHx" firstAttribute="trailing" secondItem="bVa-WI-nq3" secondAttribute="trailing" id="XEP-ec-Wmb"/>
                             <constraint firstItem="bVa-WI-nq3" firstAttribute="leading" secondItem="WVq-Xm-Iv6" secondAttribute="leading" id="ad5-mr-YQr"/>
+                            <constraint firstItem="YNB-21-GtK" firstAttribute="trailing" secondItem="Z71-jv-LHx" secondAttribute="trailing" id="bXq-3D-EB2"/>
                             <constraint firstItem="bVa-WI-nq3" firstAttribute="top" secondItem="WVq-Xm-Iv6" secondAttribute="top" id="fiO-eT-737"/>
+                            <constraint firstItem="YNB-21-GtK" firstAttribute="bottom" secondItem="bVa-WI-nq3" secondAttribute="bottom" id="hw6-K1-J8A"/>
                             <constraint firstItem="Z71-jv-LHx" firstAttribute="bottom" secondItem="WVq-Xm-Iv6" secondAttribute="bottom" id="nqv-WR-MDQ"/>
                             <constraint firstItem="WVq-Xm-Iv6" firstAttribute="trailing" secondItem="bVa-WI-nq3" secondAttribute="trailing" id="rpU-Ku-2Tz"/>
                             <constraint firstItem="Z71-jv-LHx" firstAttribute="top" secondItem="WVq-Xm-Iv6" secondAttribute="top" constant="605" id="yLi-Bx-nbE"/>
@@ -948,13 +962,15 @@
         <image name="12-acceptDriverLicenseSnap" width="414" height="736"/>
         <image name="13-backScanOrSkip" width="414" height="736"/>
         <image name="14-manualDataEntry" width="414" height="736"/>
+        <image name="14-manualDataEntry-whiteout" width="414" height="736"/>
         <image name="19-primaryOverview" width="1242" height="2208"/>
         <image name="2-tapLowerMyPayment_LoggedOut" width="414" height="736"/>
         <image name="20-coApp_manualDataEntry" width="414" height="736"/>
         <image name="20-coApp_manualDataEntry-whiteout" width="414" height="736"/>
         <image name="24-coApp_SSN" width="414" height="736"/>
         <image name="26-checkingCredit" width="414" height="736"/>
-        <image name="27preDetailsCheckboxScreen-1" width="1242" height="2208"/>
+        <image name="27preDetailsCheckboxScreen-1" width="414" height="735"/>
+        <image name="27preDetailsCheckboxScreen-whiteout" width="414" height="735"/>
         <image name="3-snapVehicle_LoggedOut" width="414" height="736"/>
         <image name="4-tapIntoRefiCell_LoggedOut copy" width="414" height="736"/>
         <image name="5-SignUp" width="414" height="736"/>
