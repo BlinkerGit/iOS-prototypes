@@ -277,60 +277,51 @@
             </objects>
             <point key="canvasLocation" x="1908" y="870.31484257871068"/>
         </scene>
-        <!--Cross Fade Controller-->
+        <!--Form Controller-->
         <scene sceneID="Jms-Ry-j7R">
             <objects>
-                <viewController id="Uq6-lG-Vma" customClass="CrossFadeController" customModule="CoApplicant" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="Uq6-lG-Vma" customClass="FormController" customModule="CoApplicant" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="G6o-W1-iUU">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="9-vehicleDetailsVerifying" translatesAutoresizingMaskIntoConstraints="NO" id="rV1-ci-TdQ">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                            <imageView userInteractionEnabled="NO" tag="2" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="9-vehicleDetailsVerifying" translatesAutoresizingMaskIntoConstraints="NO" id="rV1-ci-TdQ">
+                                <rect key="frame" x="-39" y="0.0" width="414" height="667"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qek-6u-yel">
-                                <rect key="frame" x="46" y="74" width="283" height="519"/>
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qek-6u-yel" userLabel="Hotspot">
+                                <rect key="frame" x="46" y="74" width="289" height="519"/>
                                 <connections>
                                     <segue destination="dEa-MZ-qD5" kind="show" id="r0O-1q-ueR"/>
                                 </connections>
                             </button>
+                            <imageView userInteractionEnabled="NO" tag="1" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="8-confirmVehicleDetails-edited" translatesAutoresizingMaskIntoConstraints="NO" id="syA-xx-SRl">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                            </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="8-confirmVehicleDetails" translatesAutoresizingMaskIntoConstraints="NO" id="Pox-0V-3iv">
                                 <rect key="frame" x="0.0" y="20" width="375" height="647"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="z8C-oB-t5O">
-                                <rect key="frame" x="0.0" y="625" width="375" height="42"/>
-                                <connections>
-                                    <action selector="tappedHotspot:" destination="Uq6-lG-Vma" eventType="touchUpInside" id="Gmt-io-twK"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="Qek-6u-yel" firstAttribute="centerY" secondItem="rV1-ci-TdQ" secondAttribute="centerY" id="1Js-9p-bbK"/>
-                            <constraint firstItem="z8C-oB-t5O" firstAttribute="top" secondItem="Bt5-4a-7pF" secondAttribute="top" constant="605" id="2z6-wY-CFN"/>
                             <constraint firstItem="rV1-ci-TdQ" firstAttribute="centerY" secondItem="G6o-W1-iUU" secondAttribute="centerY" id="3ZN-Wf-n0R"/>
                             <constraint firstItem="Pox-0V-3iv" firstAttribute="top" secondItem="Bt5-4a-7pF" secondAttribute="top" id="6Hh-rU-cjx"/>
+                            <constraint firstItem="Bt5-4a-7pF" firstAttribute="trailing" secondItem="Qek-6u-yel" secondAttribute="trailing" constant="40" id="7H1-wA-xiQ"/>
                             <constraint firstItem="Pox-0V-3iv" firstAttribute="leading" secondItem="Bt5-4a-7pF" secondAttribute="leading" id="FLF-yr-OFn"/>
                             <constraint firstItem="Qek-6u-yel" firstAttribute="top" secondItem="Bt5-4a-7pF" secondAttribute="top" constant="54" id="Lmn-Z4-mvu"/>
+                            <constraint firstItem="syA-xx-SRl" firstAttribute="bottom" secondItem="Bt5-4a-7pF" secondAttribute="bottom" id="XLd-7h-Exb"/>
+                            <constraint firstItem="syA-xx-SRl" firstAttribute="top" secondItem="Bt5-4a-7pF" secondAttribute="top" id="XfG-D2-a8r"/>
                             <constraint firstItem="Bt5-4a-7pF" firstAttribute="bottom" secondItem="rV1-ci-TdQ" secondAttribute="bottom" id="aEY-o3-Lyw"/>
+                            <constraint firstItem="syA-xx-SRl" firstAttribute="leading" secondItem="Pox-0V-3iv" secondAttribute="leading" id="bGH-Hn-bdV"/>
                             <constraint firstItem="rV1-ci-TdQ" firstAttribute="trailing" secondItem="Pox-0V-3iv" secondAttribute="trailing" id="deQ-LR-X8J"/>
-                            <constraint firstItem="Qek-6u-yel" firstAttribute="centerX" secondItem="z8C-oB-t5O" secondAttribute="centerX" id="eoq-MM-fod"/>
-                            <constraint firstItem="z8C-oB-t5O" firstAttribute="bottom" secondItem="Bt5-4a-7pF" secondAttribute="bottom" id="fZ2-n5-Mno"/>
                             <constraint firstItem="Bt5-4a-7pF" firstAttribute="trailing" secondItem="Pox-0V-3iv" secondAttribute="trailing" id="gb6-VS-VIv"/>
                             <constraint firstItem="Bt5-4a-7pF" firstAttribute="bottom" secondItem="Pox-0V-3iv" secondAttribute="bottom" id="it3-DI-U8v"/>
                             <constraint firstItem="Qek-6u-yel" firstAttribute="leading" secondItem="Bt5-4a-7pF" secondAttribute="leading" constant="46" id="lgD-DA-Mxh"/>
-                            <constraint firstItem="z8C-oB-t5O" firstAttribute="trailing" secondItem="Pox-0V-3iv" secondAttribute="trailing" id="pUh-Du-0Ru"/>
-                            <constraint firstItem="z8C-oB-t5O" firstAttribute="leading" secondItem="Pox-0V-3iv" secondAttribute="leading" id="qiL-FZ-nlm"/>
-                            <constraint firstItem="rV1-ci-TdQ" firstAttribute="leading" secondItem="z8C-oB-t5O" secondAttribute="leading" id="tgw-47-Zeo"/>
+                            <constraint firstItem="syA-xx-SRl" firstAttribute="trailing" secondItem="Pox-0V-3iv" secondAttribute="trailing" id="olJ-Ph-fCd"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Bt5-4a-7pF"/>
                     </view>
                     <navigationItem key="navigationItem" id="3b9-DP-4N4"/>
-                    <connections>
-                        <outlet property="first" destination="Pox-0V-3iv" id="5TL-Rh-mvW"/>
-                        <outlet property="second" destination="rV1-ci-TdQ" id="3ct-JS-tdr"/>
-                        <outlet property="secondHotspot" destination="Qek-6u-yel" id="ipP-oA-0kd"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="Xoe-qk-bX4" sceneMemberID="firstResponder"/>
             </objects>
@@ -381,56 +372,44 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="12-acceptDriverLicenseSnap" translatesAutoresizingMaskIntoConstraints="NO" id="0Mq-iq-Mbg">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
+                            <imageView userInteractionEnabled="NO" tag="1" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="12-acceptDriverLicenseSnap" translatesAutoresizingMaskIntoConstraints="NO" id="B2X-hT-aE8">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Ty-a9-Uar">
-                                <rect key="frame" x="0.0" y="600" width="375" height="62"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="11-snapDriverLicense" translatesAutoresizingMaskIntoConstraints="NO" id="OEj-RH-fq2">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Pak-GC-fmw">
+                                <rect key="frame" x="16" y="606" width="343" height="53"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="53" id="uGe-0C-uJj"/>
+                                </constraints>
+                                <state key="normal" title="Button"/>
                                 <connections>
-                                    <segue destination="7kx-fP-4mw" kind="show" id="PQt-nl-3BK"/>
+                                    <segue destination="7kx-fP-4mw" kind="show" id="YuI-Le-eQA"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uuY-DK-9dL">
-                                <rect key="frame" x="158" y="566" width="59" height="58"/>
-                                <connections>
-                                    <action selector="tappedHotspot:" destination="zjH-1P-zWN" eventType="touchUpInside" id="0Qd-cm-44i"/>
-                                </connections>
-                            </button>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="11-snapDriverLicense" translatesAutoresizingMaskIntoConstraints="NO" id="qMr-ae-zkW">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="647"/>
-                            </imageView>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="iIb-5r-QCB" firstAttribute="bottom" secondItem="uuY-DK-9dL" secondAttribute="bottom" constant="43" id="8kv-YG-BB7"/>
-                            <constraint firstItem="qMr-ae-zkW" firstAttribute="top" secondItem="iIb-5r-QCB" secondAttribute="top" constant="-20" id="CoY-Cn-DPA"/>
-                            <constraint firstItem="iIb-5r-QCB" firstAttribute="bottom" secondItem="qMr-ae-zkW" secondAttribute="bottom" constant="20" id="DMf-eM-Vbl"/>
-                            <constraint firstItem="7Ty-a9-Uar" firstAttribute="trailing" secondItem="qMr-ae-zkW" secondAttribute="trailing" id="F1i-wI-jZC"/>
-                            <constraint firstItem="7Ty-a9-Uar" firstAttribute="top" secondItem="iIb-5r-QCB" secondAttribute="top" constant="580" id="NaZ-67-3Co"/>
-                            <constraint firstItem="uuY-DK-9dL" firstAttribute="top" secondItem="iIb-5r-QCB" secondAttribute="top" constant="546" id="Ph7-KI-k9L"/>
-                            <constraint firstItem="0Mq-iq-Mbg" firstAttribute="leading" secondItem="7Ty-a9-Uar" secondAttribute="leading" id="XQ2-6M-vMu"/>
-                            <constraint firstItem="qMr-ae-zkW" firstAttribute="leading" secondItem="iIb-5r-QCB" secondAttribute="leading" id="Xrt-qb-F3Q"/>
-                            <constraint firstItem="iIb-5r-QCB" firstAttribute="trailing" secondItem="qMr-ae-zkW" secondAttribute="trailing" id="iid-VB-LqM"/>
-                            <constraint firstItem="iIb-5r-QCB" firstAttribute="bottom" secondItem="0Mq-iq-Mbg" secondAttribute="bottom" constant="20" id="j0A-0f-0q2"/>
-                            <constraint firstItem="0Mq-iq-Mbg" firstAttribute="trailing" secondItem="7Ty-a9-Uar" secondAttribute="trailing" id="oEg-Zo-Gm1"/>
-                            <constraint firstItem="0Mq-iq-Mbg" firstAttribute="centerY" secondItem="qbK-bd-aG9" secondAttribute="centerY" constant="-10" id="onG-G8-tsj"/>
-                            <constraint firstItem="7Ty-a9-Uar" firstAttribute="leading" secondItem="qMr-ae-zkW" secondAttribute="leading" id="osA-gq-5c6"/>
-                            <constraint firstItem="uuY-DK-9dL" firstAttribute="centerX" secondItem="7Ty-a9-Uar" secondAttribute="centerX" id="qfB-li-Jps"/>
-                            <constraint firstItem="uuY-DK-9dL" firstAttribute="leading" secondItem="iIb-5r-QCB" secondAttribute="leading" constant="158" id="vPp-K5-VyY"/>
-                            <constraint firstItem="iIb-5r-QCB" firstAttribute="bottom" secondItem="7Ty-a9-Uar" secondAttribute="bottom" constant="5" id="x2K-oA-hic"/>
+                            <constraint firstAttribute="trailing" secondItem="OEj-RH-fq2" secondAttribute="trailing" id="3h8-oD-3Ma"/>
+                            <constraint firstItem="B2X-hT-aE8" firstAttribute="leading" secondItem="iIb-5r-QCB" secondAttribute="leading" id="AHR-eC-KC1"/>
+                            <constraint firstItem="Pak-GC-fmw" firstAttribute="leading" secondItem="qbK-bd-aG9" secondAttribute="leadingMargin" id="Aru-wx-05J"/>
+                            <constraint firstItem="iIb-5r-QCB" firstAttribute="trailing" secondItem="B2X-hT-aE8" secondAttribute="trailing" id="HVd-mu-IA0"/>
+                            <constraint firstItem="iIb-5r-QCB" firstAttribute="bottom" secondItem="B2X-hT-aE8" secondAttribute="bottom" id="Hrq-sF-7KY"/>
+                            <constraint firstItem="OEj-RH-fq2" firstAttribute="leading" secondItem="qbK-bd-aG9" secondAttribute="leading" id="hJM-8A-ONm"/>
+                            <constraint firstItem="iIb-5r-QCB" firstAttribute="bottom" secondItem="Pak-GC-fmw" secondAttribute="bottom" constant="8" id="iTv-NN-vRu"/>
+                            <constraint firstItem="OEj-RH-fq2" firstAttribute="bottom" secondItem="iIb-5r-QCB" secondAttribute="bottom" id="lag-h8-oK0"/>
+                            <constraint firstItem="OEj-RH-fq2" firstAttribute="top" secondItem="iIb-5r-QCB" secondAttribute="top" id="lio-Xo-cva"/>
+                            <constraint firstItem="B2X-hT-aE8" firstAttribute="top" secondItem="iIb-5r-QCB" secondAttribute="top" id="nwQ-HX-8KR"/>
+                            <constraint firstItem="Pak-GC-fmw" firstAttribute="centerX" secondItem="OEj-RH-fq2" secondAttribute="centerX" id="y5S-Ax-qm8"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="iIb-5r-QCB"/>
                     </view>
                     <navigationItem key="navigationItem" id="hYA-DC-YtH"/>
-                    <connections>
-                        <outlet property="first" destination="qMr-ae-zkW" id="Ymc-rK-xme"/>
-                        <outlet property="second" destination="0Mq-iq-Mbg" id="JvJ-N1-48Y"/>
-                        <outlet property="secondHotspot" destination="7Ty-a9-Uar" id="kjS-Hg-hRL"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="F2M-1A-f5O" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1908" y="1554"/>
+            <point key="canvasLocation" x="1908" y="1553.9730134932536"/>
         </scene>
         <!--Prototype Controller-->
         <scene sceneID="mDC-5J-IqT">
@@ -467,7 +446,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="URG-kF-JgW" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-354" y="2245"/>
+            <point key="canvasLocation" x="-354" y="2278"/>
         </scene>
         <!--Form Controller-->
         <scene sceneID="NFR-Di-H33">
@@ -511,7 +490,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="slc-Z2-G7v" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="361" y="2245"/>
+            <point key="canvasLocation" x="361" y="2277"/>
         </scene>
         <!--Form Controller-->
         <scene sceneID="RVj-gC-HYn">
@@ -555,7 +534,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4Gc-8i-09w" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1121" y="2245"/>
+            <point key="canvasLocation" x="1121" y="2276"/>
         </scene>
         <!--Form Controller-->
         <scene sceneID="jsW-Ai-L57">
@@ -860,8 +839,8 @@
     <resources>
         <image name="1-emptyGarage_LoggedOut" width="414" height="736"/>
         <image name="10-infoScreenForIdentity" width="414" height="736"/>
-        <image name="11-snapDriverLicense" width="414" height="736"/>
-        <image name="12-acceptDriverLicenseSnap" width="414" height="736"/>
+        <image name="11-snapDriverLicense" width="416" height="736"/>
+        <image name="12-acceptDriverLicenseSnap" width="416" height="736"/>
         <image name="13-backScanOrSkip" width="414" height="736"/>
         <image name="14-manualDataEntry" width="414" height="736"/>
         <image name="14-manualDataEntry-whiteout" width="414" height="736"/>
@@ -879,6 +858,7 @@
         <image name="6-tapintoRefi_loggedIn" width="414" height="736"/>
         <image name="7-refiSplashScreen" width="414" height="736"/>
         <image name="8-confirmVehicleDetails" width="414" height="736"/>
+        <image name="8-confirmVehicleDetails-edited" width="414" height="736"/>
         <image name="9-vehicleDetailsVerifying" width="414" height="736"/>
         <image name="combinedIncomePhone" width="414" height="736"/>
         <image name="combinedIncomePhone-whiteout" width="414" height="736"/>

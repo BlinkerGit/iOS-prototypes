@@ -87,6 +87,7 @@ class PrototypeController: UIViewController {
     for child in (view.subviews.filter { $0 is UIImageView }) {
       views.append(child as! UIImageView)
       child.isUserInteractionEnabled = true
+      child.alpha = 1
     }
     return views.sorted { $0.tag < $1.tag }
   }
