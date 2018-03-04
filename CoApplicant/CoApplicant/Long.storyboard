@@ -160,10 +160,10 @@
             </objects>
             <point key="canvasLocation" x="-354.39999999999998" y="871.21439280359823"/>
         </scene>
-        <!--Form Controller-->
+        <!--Tap Controller-->
         <scene sceneID="0Du-AD-181">
             <objects>
-                <viewController id="wxb-u0-Cv9" customClass="FormController" customModule="CoApplicant" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="wxb-u0-Cv9" customClass="TapController" customModule="CoApplicant" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="A7L-h0-LN3">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -352,10 +352,10 @@
             </objects>
             <point key="canvasLocation" x="-354" y="2245"/>
         </scene>
-        <!--Form Controller-->
+        <!--Tap Controller-->
         <scene sceneID="NFR-Di-H33">
             <objects>
-                <viewController id="Wbm-C0-Y6B" customClass="FormController" customModule="CoApplicant" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="Wbm-C0-Y6B" customClass="TapController" customModule="CoApplicant" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="SwI-dB-g2q">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -507,10 +507,10 @@
             </objects>
             <point key="canvasLocation" x="-354" y="2918"/>
         </scene>
-        <!--Form Controller-->
+        <!--Tap Controller-->
         <scene sceneID="jsW-Ai-L57">
             <objects>
-                <viewController id="XqA-ET-FsX" customClass="FormController" customModule="CoApplicant" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="XqA-ET-FsX" customClass="TapController" customModule="CoApplicant" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="NwY-Nw-WG3">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -659,10 +659,10 @@
             </objects>
             <point key="canvasLocation" x="361" y="3615"/>
         </scene>
-        <!--Form Controller-->
+        <!--Tap Controller-->
         <scene sceneID="ufU-h3-CuO">
             <objects>
-                <viewController id="eYE-MJ-UrB" customClass="FormController" customModule="CoApplicant" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="eYE-MJ-UrB" customClass="TapController" customModule="CoApplicant" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="7k1-Nc-omY">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -834,10 +834,10 @@
             </objects>
             <point key="canvasLocation" x="692" y="4835"/>
         </scene>
-        <!--Form Controller-->
+        <!--Tap Controller-->
         <scene sceneID="xpB-ky-tdA">
             <objects>
-                <viewController id="dEa-MZ-qD5" customClass="FormController" customModule="CoApplicant" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="dEa-MZ-qD5" customClass="TapController" customModule="CoApplicant" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="2Ih-Q8-aOp">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -988,10 +988,10 @@
             </objects>
             <point key="canvasLocation" x="1908" y="4324"/>
         </scene>
-        <!--Form Controller-->
+        <!--Tap Controller-->
         <scene sceneID="hwP-z8-762">
             <objects>
-                <viewController id="cov-i6-CXr" customClass="FormController" customModule="CoApplicant" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="cov-i6-CXr" customClass="TapController" customModule="CoApplicant" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="tax-NK-igV">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1039,10 +1039,10 @@
             </objects>
             <point key="canvasLocation" x="-354" y="1554"/>
         </scene>
-        <!--Form Controller-->
+        <!--Tap Controller-->
         <scene sceneID="p2l-i9-p7B">
             <objects>
-                <viewController id="3fo-Ec-2EI" customClass="FormController" customModule="CoApplicant" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="3fo-Ec-2EI" customClass="TapController" customModule="CoApplicant" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="zXG-Nt-dPa">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -1069,6 +1069,9 @@
                                     <constraint firstAttribute="height" constant="53" id="Pyg-ee-HPL"/>
                                     <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="40" id="dhO-6N-8ce"/>
                                 </constraints>
+                                <connections>
+                                    <action selector="didTap" destination="3fo-Ec-2EI" eventType="touchUpInside" id="iuq-SY-hIv"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>

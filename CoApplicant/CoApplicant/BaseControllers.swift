@@ -4,21 +4,6 @@
 //
 
 import UIKit
-import AudioToolbox
-
-class CameraSnapButton: UIButton {
-
-  override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
-    super.touchesEnded(touches, with: event)
-
-    if #available(iOS 9.0, *) {
-      AudioServicesPlaySystemSoundWithCompletion(SystemSoundID(1108), nil)
-      print("played sound")
-    } else {
-      AudioServicesPlaySystemSound(1108)
-    }
-  }
-}
 
 // Base controller that provides hidden 'back' button and shake-to-restart
 class PrototypeController: UIViewController {
@@ -109,7 +94,7 @@ class PrototypeController: UIViewController {
 }
 
 // Simulate filling in a form (or cause a state change) by tapping
-class FormController: PrototypeController {
+class TapController: PrototypeController {
 
   override func viewDidLoad() {
     super.viewDidLoad()
@@ -117,24 +102,17 @@ class FormController: PrototypeController {
     let tapGesture = UITapGestureRecognizer(target: self, action: #selector(self.didTap))
     view.addGestureRecognizer(tapGesture)
 
-    if let firstHotspot = hotspots.first, hotspots.count == 2 {
-      firstHotspot?.addTarget(self, action: #selector(self.didTap), for: .touchUpInside)
-      print("firstHotspot: \(firstHotspot)")
-    }
-
     goToNext()
   }
 
-
-
-  @objc func didTap() {
+  @IBAction func didTap() {
     goToNext()
   }
 }
 
 // Add as many image views as you want, assign tags in order of presention, and then swipe down
 // to cycle through and show variants. To
-class ABController: PrototypeController {
+class SwipeController: PrototypeController {
 
   override func viewDidLoad() {
     super.viewDidLoad()
