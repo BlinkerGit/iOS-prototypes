@@ -4,6 +4,21 @@
 //
 
 import UIKit
+import AudioToolbox
+
+class CameraSnapButton: UIButton {
+
+  override func touchesEnded(_ touches: Set<UITouch>, with event: UIEvent?) {
+    super.touchesEnded(touches, with: event)
+
+    if #available(iOS 9.0, *) {
+      AudioServicesPlaySystemSoundWithCompletion(SystemSoundID(1108), nil)
+      print("played sound")
+    } else {
+      AudioServicesPlaySystemSound(1108)
+    }
+  }
+}
 
 // Base controller that provides hidden 'back' button and shake-to-restart
 class PrototypeController: UIViewController {
@@ -102,8 +117,15 @@ class FormController: PrototypeController {
     let tapGesture = UITapGestureRecognizer(target: self, action: #selector(self.didTap))
     view.addGestureRecognizer(tapGesture)
 
+    if let firstHotspot = hotspots.first, hotspots.count == 2 {
+      firstHotspot?.addTarget(self, action: #selector(self.didTap), for: .touchUpInside)
+      print("firstHotspot: \(firstHotspot)")
+    }
+
     goToNext()
   }
+
+
 
   @objc func didTap() {
     goToNext()
