@@ -10,13 +10,19 @@ class PrototypeController: UIViewController {
 
   var imageIndex: Int = -1
   let hiddenBackButton = UIButton()
+  var mailComposer: MFMailComposeViewController?
 
   override func viewDidLoad() {
     super.viewDidLoad()
 
+    let longPress = UILongPressGestureRecognizer(target: self, action: #selector(self.didLongPress))
+    longPress.minimumPressDuration = 1.5
+    view.addGestureRecognizer(longPress)
+
     hiddenBackButton.frame = CGRect(x: 0.0, y: 0.0, width: 100.0, height: 60.0)
     view.addSubview(hiddenBackButton)
     hiddenBackButton.addTarget(self, action: #selector(self.goBack), for: .touchUpInside)
+    goToNext()
   }
 
   override func viewDidAppear(_ animated: Bool) {
@@ -28,7 +34,13 @@ class PrototypeController: UIViewController {
   func goBack() {
     navigationController?.popViewController(animated: true)
   }
+  
+  @objc
+  func didLongPress() {
+    sendEmail()
+  }
 
+  // MARK - Shake to pop to root
   override func becomeFirstResponder() -> Bool {
     return true
   }
@@ -40,15 +52,15 @@ class PrototypeController: UIViewController {
   }
 
   var currentHotspot: UIButton?
-  var currentImageView: UIImageView? {
-    didSet {
-      guard let current = currentImageView else { return }
+  var currentImageView: UIImageView? { didSet { checkForTimedImage() } }
 
-      if current is TimedImageView {
-        delay(0.5, closure: {
-          self.currentHotspot?.sendActions(for: .touchUpInside)
-        })
-      }
+  func checkForTimedImage() {
+    guard let current = currentImageView else { return }
+
+    if current is TimedImageView {
+      delay(0.8, closure: {
+        self.currentHotspot?.sendActions(for: .touchUpInside)
+      })
     }
   }
 
@@ -117,8 +129,6 @@ class TapController: PrototypeController {
 
     let tapGesture = UITapGestureRecognizer(target: self, action: #selector(self.didTap))
     view.addGestureRecognizer(tapGesture)
-
-    goToNext()
   }
 
   @IBAction func didTap() {
@@ -136,12 +146,6 @@ class SwipeController: PrototypeController {
     let verticalSwipeGesture = UISwipeGestureRecognizer(target: self, action: #selector(self.didSwipe))
     verticalSwipeGesture.direction = .down
     view.addGestureRecognizer(verticalSwipeGesture)
-
-    for button in hotspots {
-      button?.isEnabled = false
-    }
-
-    goToNext()
   }
 
   @objc func didSwipe() {
@@ -158,3 +162,35 @@ extension Array {
 func delay(_ delay: Double, closure: @escaping () -> Void) {
   DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + Double(Int64(delay * Double(NSEC_PER_SEC))) / Double(NSEC_PER_SEC), execute: closure)
 }
+
+import MessageUI
+
+extension PrototypeController:  MFMailComposeViewControllerDelegate {
+
+  func sendEmail() {
+    guard  MFMailComposeViewController.canSendMail() else  { return }
+    guard self.mailComposer == nil else { return }
+
+    let mailComposer = MFMailComposeViewController()
+    mailComposer.mailComposeDelegate = self
+
+    mailComposer.setSubject("Prototype feedback")
+    let screenNumber = self.navigationController?.viewControllers.index(of: self) ?? 0
+    let storyboard = self.storyboard
+    let storyboardName = storyboard?.value(forKey: "name") ?? "n/a"
+    var message = ""
+    message.append("\nVersion: \"\(storyboardName)"\")
+    message.append("\nScreen number: \(screenNumber)")
+    mailComposer.setMessageBody(message, isHTML: false)
+
+    self.mailComposer = mailComposer
+    show(mailComposer, sender: nil)
+  }
+
+  func mailComposeController(_ controller: MFMailComposeViewController, didFinishWith result: MFMailComposeResult, error: Error?) {
+    dismiss(animated: true, completion: {
+      self.mailComposer = nil
+    })
+  }
+}
+
