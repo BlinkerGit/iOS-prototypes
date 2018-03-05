@@ -84,13 +84,13 @@
 				3AF908652047803500F848E7 /* BaseControllers.swift */,
 				3A81FDE7204CB0210030A8F7 /* CameraSnapButton.swift */,
 				3A81FDE12049D5A70030A8F7 /* TableOfContents.storyboard */,
+				3ACBC4E6204DA780006F275E /* TimedImageView.swift */,
 				3A81FDDF2049D4090030A8F7 /* Long.storyboard */,
 				3AF908572047687700F848E7 /* Short.storyboard */,
 				3A81FDE32049EB3B0030A8F7 /* Todos.storyboard */,
 				3AF9085A2047687700F848E7 /* Assets.xcassets */,
 				3AF9085C2047687700F848E7 /* LaunchScreen.storyboard */,
 				3AF9085F2047687700F848E7 /* Info.plist */,
-				3ACBC4E6204DA780006F275E /* TimedImageView.swift */,
 			);
 			path = CoApplicant;
 			sourceTree = "<group>";
