@@ -39,6 +39,19 @@ class PrototypeController: UIViewController {
     }
   }
 
+  var currentHotspot: UIButton?
+  var currentImageView: UIImageView? {
+    didSet {
+      guard let current = currentImageView else { return }
+
+      if current is TimedImageView {
+        delay(0.5, closure: {
+          self.currentHotspot?.sendActions(for: .touchUpInside)
+        })
+      }
+    }
+  }
+
   func goToNext() {
     guard !imageViews.isEmpty else {
       return
@@ -48,9 +61,11 @@ class PrototypeController: UIViewController {
     if imageIndex == imageViews.count {
       imageIndex = 0
     }
-    let currentImageViews = imageViews[imageIndex]
-    currentImageViews.isHidden = false
-    view.addSubview(currentImageViews)
+    let current = imageViews[imageIndex]
+    current.isHidden = false
+    view.addSubview(current)
+
+    currentImageView = current
 
     for button in hotspots {
       button?.isEnabled = false
@@ -59,6 +74,7 @@ class PrototypeController: UIViewController {
     if let hotspot = hotspots[safe: imageIndex], let button = hotspot {
       button.isEnabled = true
       view.addSubview(button)
+      currentHotspot = hotspot
     }
 
     view.addSubview(hiddenBackButton)
@@ -137,4 +153,8 @@ extension Array {
   subscript(safe index: Int) -> Element? {
     return Int(index) < count ? self[Int(index)] : nil
   }
+}
+
+func delay(_ delay: Double, closure: @escaping () -> Void) {
+  DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + Double(Int64(delay * Double(NSEC_PER_SEC))) / Double(NSEC_PER_SEC), execute: closure)
 }
