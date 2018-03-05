@@ -179,7 +179,7 @@ extension PrototypeController:  MFMailComposeViewControllerDelegate {
     let storyboard = self.storyboard
     let storyboardName = storyboard?.value(forKey: "name") ?? "n/a"
     var message = ""
-    message.append("\nVersion: \"\(storyboardName)"\")
+    message.append("\nVersion: \"\(storyboardName)\"")
     message.append("\nScreen number: \(screenNumber)")
     mailComposer.setMessageBody(message, isHTML: false)
 
