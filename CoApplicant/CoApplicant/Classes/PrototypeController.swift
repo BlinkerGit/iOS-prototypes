@@ -54,9 +54,10 @@ class PrototypeController: UIViewController {
 
   override func motionEnded(_ motion: UIEventSubtype, with event: UIEvent?) {
     if motion == .motionShake {
-      if self.presentingViewController != nil {
-        self.presentingViewController?.dismiss(animated: true, completion: {
-          self.presentingViewController?.navigationController?.popToRootViewController(animated: true)
+      if presentingViewController != nil {
+        let parent = self.presentingViewController as! UINavigationController
+        parent.dismiss(animated: true, completion: {
+          parent.popToRootViewController(animated: true)
         })
       } else {
         navigationController?.popToRootViewController(animated: true)
