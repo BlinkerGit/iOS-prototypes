@@ -58,8 +58,10 @@ class PrototypeController: UIViewController {
     guard let current = currentImageView else { return }
 
     if current is TimedImageView {
+      self.view.isUserInteractionEnabled = false
       delay(0.8, closure: {
         self.currentHotspot?.sendActions(for: .touchUpInside)
+        self.view.isUserInteractionEnabled = false
       })
     }
   }
