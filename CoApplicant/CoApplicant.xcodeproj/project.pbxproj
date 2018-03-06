@@ -12,11 +12,14 @@
 		3A81FDE42049EB3B0030A8F7 /* Todos.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A81FDE32049EB3B0030A8F7 /* Todos.storyboard */; };
 		3A81FDE8204CB0210030A8F7 /* CameraSnapButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A81FDE7204CB0210030A8F7 /* CameraSnapButton.swift */; };
 		3ACBC4E7204DA780006F275E /* TimedImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ACBC4E6204DA780006F275E /* TimedImageView.swift */; };
+		3ACBC4E9204E4E82006F275E /* UIColor+Utils.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ACBC4E8204E4E82006F275E /* UIColor+Utils.swift */; };
+		3ACBC4EB204E50C2006F275E /* PrototypeController+Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ACBC4EA204E50C2006F275E /* PrototypeController+Message.swift */; };
+		3ACBC4ED204E5101006F275E /* GestureControllers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3ACBC4EC204E5101006F275E /* GestureControllers.swift */; };
 		3AF908542047687700F848E7 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AF908532047687700F848E7 /* AppDelegate.swift */; };
 		3AF908592047687700F848E7 /* Short.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3AF908572047687700F848E7 /* Short.storyboard */; };
 		3AF9085B2047687700F848E7 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3AF9085A2047687700F848E7 /* Assets.xcassets */; };
 		3AF9085E2047687700F848E7 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3AF9085C2047687700F848E7 /* LaunchScreen.storyboard */; };
-		3AF908662047803500F848E7 /* BaseControllers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AF908652047803500F848E7 /* BaseControllers.swift */; };
+		3AF908662047803500F848E7 /* PrototypeController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3AF908652047803500F848E7 /* PrototypeController.swift */; };
 		4DAB30403B67D8890AB567DD /* Pods_CoApplicant.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B90C8C15AFD72A547463E7A7 /* Pods_CoApplicant.framework */; };
 /* End PBXBuildFile section */
 
@@ -27,13 +30,16 @@
 		3A81FDE32049EB3B0030A8F7 /* Todos.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Todos.storyboard; sourceTree = "<group>"; };
 		3A81FDE7204CB0210030A8F7 /* CameraSnapButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraSnapButton.swift; sourceTree = "<group>"; };
 		3ACBC4E6204DA780006F275E /* TimedImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TimedImageView.swift; sourceTree = "<group>"; };
+		3ACBC4E8204E4E82006F275E /* UIColor+Utils.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Utils.swift"; sourceTree = "<group>"; };
+		3ACBC4EA204E50C2006F275E /* PrototypeController+Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "PrototypeController+Message.swift"; sourceTree = "<group>"; };
+		3ACBC4EC204E5101006F275E /* GestureControllers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GestureControllers.swift; sourceTree = "<group>"; };
 		3AF908502047687700F848E7 /* CoApplicant.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoApplicant.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3AF908532047687700F848E7 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		3AF908582047687700F848E7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Short.storyboard; sourceTree = "<group>"; };
 		3AF9085A2047687700F848E7 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3AF9085D2047687700F848E7 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3AF9085F2047687700F848E7 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		3AF908652047803500F848E7 /* BaseControllers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BaseControllers.swift; sourceTree = "<group>"; };
+		3AF908652047803500F848E7 /* PrototypeController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrototypeController.swift; sourceTree = "<group>"; };
 		B79173D355C2C6D7C9B4105E /* Pods-CoApplicant.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoApplicant.debug.xcconfig"; path = "Pods/Target Support Files/Pods-CoApplicant/Pods-CoApplicant.debug.xcconfig"; sourceTree = "<group>"; };
 		B90C8C15AFD72A547463E7A7 /* Pods_CoApplicant.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_CoApplicant.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
@@ -59,6 +65,18 @@
 			name = Pods;
 			sourceTree = "<group>";
 		};
+		3ACBC4EE204E5124006F275E /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				3AF908652047803500F848E7 /* PrototypeController.swift */,
+				3ACBC4EA204E50C2006F275E /* PrototypeController+Message.swift */,
+				3ACBC4EC204E5101006F275E /* GestureControllers.swift */,
+				3A81FDE7204CB0210030A8F7 /* CameraSnapButton.swift */,
+				3ACBC4E6204DA780006F275E /* TimedImageView.swift */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
 		3AF908472047687700F848E7 = {
 			isa = PBXGroup;
 			children = (
@@ -81,16 +99,15 @@
 			isa = PBXGroup;
 			children = (
 				3AF908532047687700F848E7 /* AppDelegate.swift */,
-				3AF908652047803500F848E7 /* BaseControllers.swift */,
-				3A81FDE7204CB0210030A8F7 /* CameraSnapButton.swift */,
 				3A81FDE12049D5A70030A8F7 /* TableOfContents.storyboard */,
-				3ACBC4E6204DA780006F275E /* TimedImageView.swift */,
 				3A81FDDF2049D4090030A8F7 /* Long.storyboard */,
 				3AF908572047687700F848E7 /* Short.storyboard */,
 				3A81FDE32049EB3B0030A8F7 /* Todos.storyboard */,
+				3ACBC4EE204E5124006F275E /* Classes */,
 				3AF9085A2047687700F848E7 /* Assets.xcassets */,
 				3AF9085C2047687700F848E7 /* LaunchScreen.storyboard */,
 				3AF9085F2047687700F848E7 /* Info.plist */,
+				3ACBC4E8204E4E82006F275E /* UIColor+Utils.swift */,
 			);
 			path = CoApplicant;
 			sourceTree = "<group>";
@@ -235,8 +252,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3ACBC4EB204E50C2006F275E /* PrototypeController+Message.swift in Sources */,
+				3ACBC4E9204E4E82006F275E /* UIColor+Utils.swift in Sources */,
 				3ACBC4E7204DA780006F275E /* TimedImageView.swift in Sources */,
-				3AF908662047803500F848E7 /* BaseControllers.swift in Sources */,
+				3ACBC4ED204E5101006F275E /* GestureControllers.swift in Sources */,
+				3AF908662047803500F848E7 /* PrototypeController.swift in Sources */,
 				3A81FDE8204CB0210030A8F7 /* CameraSnapButton.swift in Sources */,
 				3AF908542047687700F848E7 /* AppDelegate.swift in Sources */,
 			);

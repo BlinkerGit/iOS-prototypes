@@ -4,6 +4,7 @@
 //
 
 import UIKit
+import MessageUI
 
 // Base controller that provides hidden 'back' button and shake-to-restart
 class PrototypeController: UIViewController {
@@ -11,6 +12,8 @@ class PrototypeController: UIViewController {
   var imageIndex: Int = -1
   let hiddenBackButton = UIButton()
   var mailComposer: MFMailComposeViewController?
+  var currentHotspot: UIButton?
+  var currentImageView: UIImageView? { didSet { checkForTimedImage() } }
 
   override func viewDidLoad() {
     super.viewDidLoad()
@@ -32,7 +35,11 @@ class PrototypeController: UIViewController {
 
   @objc
   func goBack() {
-    navigationController?.popViewController(animated: true)
+    if self.presentingViewController != nil {
+      self.presentingViewController?.dismiss(animated: true, completion: nil)
+    } else {
+      navigationController?.popViewController(animated: true)
+    }
   }
   
   @objc
@@ -47,12 +54,15 @@ class PrototypeController: UIViewController {
 
   override func motionEnded(_ motion: UIEventSubtype, with event: UIEvent?) {
     if motion == .motionShake {
-      self.navigationController?.popToRootViewController(animated: true)
+      if self.presentingViewController != nil {
+        self.presentingViewController?.dismiss(animated: true, completion: {
+          self.presentingViewController?.navigationController?.popToRootViewController(animated: true)
+        })
+      } else {
+        navigationController?.popToRootViewController(animated: true)
+      }
     }
   }
-
-  var currentHotspot: UIButton?
-  var currentImageView: UIImageView? { didSet { checkForTimedImage() } }
 
   func checkForTimedImage() {
     guard let current = currentImageView else { return }
@@ -67,9 +77,7 @@ class PrototypeController: UIViewController {
   }
 
   func goToNext() {
-    guard !imageViews.isEmpty else {
-      return
-    }
+    guard !imageViews.isEmpty else { return }
 
     imageIndex = imageIndex + 1
     if imageIndex == imageViews.count {
@@ -122,77 +130,3 @@ class PrototypeController: UIViewController {
     return views.sorted { $0.tag < $1.tag }
   }
 }
-
-// Simulate filling in a form (or cause a state change) by tapping
-class TapController: PrototypeController {
-
-  override func viewDidLoad() {
-    super.viewDidLoad()
-
-    let tapGesture = UITapGestureRecognizer(target: self, action: #selector(self.didTap))
-    view.addGestureRecognizer(tapGesture)
-  }
-
-  @IBAction func didTap() {
-    goToNext()
-  }
-}
-
-// Add as many image views as you want, assign tags in order of presention, and then swipe down
-// to cycle through and show variants. To
-class SwipeController: PrototypeController {
-
-  override func viewDidLoad() {
-    super.viewDidLoad()
-
-    let verticalSwipeGesture = UISwipeGestureRecognizer(target: self, action: #selector(self.didSwipe))
-    verticalSwipeGesture.direction = .down
-    view.addGestureRecognizer(verticalSwipeGesture)
-  }
-
-  @objc func didSwipe() {
-    goToNext()
-  }
-}
-
-extension Array {
-  subscript(safe index: Int) -> Element? {
-    return Int(index) < count ? self[Int(index)] : nil
-  }
-}
-
-func delay(_ delay: Double, closure: @escaping () -> Void) {
-  DispatchQueue.main.asyncAfter(deadline: DispatchTime.now() + Double(Int64(delay * Double(NSEC_PER_SEC))) / Double(NSEC_PER_SEC), execute: closure)
-}
-
-import MessageUI
-
-extension PrototypeController:  MFMailComposeViewControllerDelegate {
-
-  func sendEmail() {
-    guard  MFMailComposeViewController.canSendMail() else  { return }
-    guard self.mailComposer == nil else { return }
-
-    let mailComposer = MFMailComposeViewController()
-    mailComposer.mailComposeDelegate = self
-
-    mailComposer.setSubject("Prototype feedback")
-    let screenNumber = self.navigationController?.viewControllers.index(of: self) ?? 0
-    let storyboard = self.storyboard
-    let storyboardName = storyboard?.value(forKey: "name") ?? "n/a"
-    var message = ""
-    message.append("\nVersion: \"\(storyboardName)\"")
-    message.append("\nScreen number: \(screenNumber)")
-    mailComposer.setMessageBody(message, isHTML: false)
-
-    self.mailComposer = mailComposer
-    show(mailComposer, sender: nil)
-  }
-
-  func mailComposeController(_ controller: MFMailComposeViewController, didFinishWith result: MFMailComposeResult, error: Error?) {
-    dismiss(animated: true, completion: {
-      self.mailComposer = nil
-    })
-  }
-}
-

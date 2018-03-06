@@ -695,7 +695,7 @@
                                     <constraint firstAttribute="width" constant="343" id="btR-vJ-NEl"/>
                                 </constraints>
                                 <connections>
-                                    <segue destination="yDh-sR-gBN" kind="show" id="U5j-gf-w4p"/>
+                                    <segue destination="yDh-sR-gBN" kind="modal" modalTransitionStyle="crossDissolve" id="U5j-gf-w4p"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -840,7 +840,7 @@
                             <imageView userInteractionEnabled="NO" tag="1" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="24-coApp_SSN-filled" translatesAutoresizingMaskIntoConstraints="NO" id="4oS-GO-sOC">
                                 <rect key="frame" x="0.0" y="20" width="375" height="647"/>
                             </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="24-coApp_SSN-empty" translatesAutoresizingMaskIntoConstraints="NO" id="Ehd-2A-MxG">
+                            <imageView userInteractionEnabled="NO" alpha="0.0" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="24-coApp_SSN-empty" translatesAutoresizingMaskIntoConstraints="NO" id="Ehd-2A-MxG">
                                 <rect key="frame" x="0.0" y="20" width="375" height="647"/>
                             </imageView>
                             <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eUS-vh-Ha0">
