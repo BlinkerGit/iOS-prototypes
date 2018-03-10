@@ -43,7 +43,7 @@ import MessageUI
   override func viewDidAppear(_ animated: Bool) {
     super.viewDidAppear(animated)
     view.addSubview(hiddenBackButton)
-    view.isUserInteractionEnabled = true
+
   }
 
   @objc
@@ -85,7 +85,7 @@ import MessageUI
       self.view.isUserInteractionEnabled = false
       delay(0.8, closure: {
         self.currentHotspot?.sendActions(for: .touchUpInside)
-        self.view.isUserInteractionEnabled = false
+        self.view.isUserInteractionEnabled = true
       })
     }
   }
