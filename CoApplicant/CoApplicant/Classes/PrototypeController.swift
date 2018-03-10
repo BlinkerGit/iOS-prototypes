@@ -7,13 +7,25 @@ import UIKit
 import MessageUI
 
 // Base controller that provides hidden 'back' button and shake-to-restart
-class PrototypeController: UIViewController {
+@IBDesignable class PrototypeController: UIViewController {
 
   var imageIndex: Int = -1
   let hiddenBackButton = UIButton()
   var mailComposer: MFMailComposeViewController?
-  var currentHotspot: UIButton?
+  var currentHotspot: UIButton? {
+    didSet {
+      currentHotspot?.isEnabled = true
+      view.addSubview(currentHotspot!)
+    }
+  }
   var currentImageView: UIImageView? { didSet { checkForTimedImage() } }
+  let statusBar = UIImageView(image: UIImage(named: "statusbar"))
+
+  @IBInspectable var showsStatus = true {
+    didSet {
+      if showsStatus { view.addSubview(statusBar) } else { statusBar.removeFromSuperview() }
+    }
+  }
 
   override func viewDidLoad() {
     super.viewDidLoad()
@@ -31,6 +43,7 @@ class PrototypeController: UIViewController {
   override func viewDidAppear(_ animated: Bool) {
     super.viewDidAppear(animated)
     view.addSubview(hiddenBackButton)
+    view.isUserInteractionEnabled = true
   }
 
   @objc
@@ -95,13 +108,13 @@ class PrototypeController: UIViewController {
     }
 
     if let hotspot = hotspots[safe: imageIndex], let button = hotspot {
-      button.isEnabled = true
-      view.addSubview(button)
-      currentHotspot = hotspot
+      currentHotspot = button
+    } else {
+      print("no hotspot found for imageIndex: \(imageIndex)")
     }
 
+    if showsStatus { view.addSubview(statusBar) } else { statusBar.removeFromSuperview() }
     view.addSubview(hiddenBackButton)
-    hiddenBackButton.isEnabled = true
   }
 
   var hotspots: [UIButton?] {
@@ -125,6 +138,9 @@ class PrototypeController: UIViewController {
   var imageViews: [UIImageView] {
     var views: [UIImageView] = []
     for child in (view.subviews.filter { $0 is UIImageView }) {
+      if child == statusBar {
+        continue
+      }
       views.append(child as! UIImageView)
       child.isUserInteractionEnabled = true
       child.alpha = 1
