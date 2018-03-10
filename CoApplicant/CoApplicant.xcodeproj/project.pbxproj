@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		3A81FDE02049D4090030A8F7 /* Long.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A81FDDF2049D4090030A8F7 /* Long.storyboard */; };
 		3A81FDE22049D5A70030A8F7 /* TableOfContents.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A81FDE12049D5A70030A8F7 /* TableOfContents.storyboard */; };
 		3A81FDE42049EB3B0030A8F7 /* Todos.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A81FDE32049EB3B0030A8F7 /* Todos.storyboard */; };
 		3A81FDE8204CB0210030A8F7 /* CameraSnapButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A81FDE7204CB0210030A8F7 /* CameraSnapButton.swift */; };
@@ -25,7 +24,6 @@
 
 /* Begin PBXFileReference section */
 		391A1F8813AF69B6B1CB0EDC /* Pods-CoApplicant.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoApplicant.release.xcconfig"; path = "Pods/Target Support Files/Pods-CoApplicant/Pods-CoApplicant.release.xcconfig"; sourceTree = "<group>"; };
-		3A81FDDF2049D4090030A8F7 /* Long.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Long.storyboard; sourceTree = "<group>"; };
 		3A81FDE12049D5A70030A8F7 /* TableOfContents.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TableOfContents.storyboard; sourceTree = "<group>"; };
 		3A81FDE32049EB3B0030A8F7 /* Todos.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Todos.storyboard; sourceTree = "<group>"; };
 		3A81FDE7204CB0210030A8F7 /* CameraSnapButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraSnapButton.swift; sourceTree = "<group>"; };
@@ -100,7 +98,6 @@
 			children = (
 				3AF908532047687700F848E7 /* AppDelegate.swift */,
 				3A81FDE12049D5A70030A8F7 /* TableOfContents.storyboard */,
-				3A81FDDF2049D4090030A8F7 /* Long.storyboard */,
 				3AF908572047687700F848E7 /* Short.storyboard */,
 				3A81FDE32049EB3B0030A8F7 /* Todos.storyboard */,
 				3ACBC4EE204E5124006F275E /* Classes */,
@@ -183,7 +180,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				3AF9085E2047687700F848E7 /* LaunchScreen.storyboard in Resources */,
-				3A81FDE02049D4090030A8F7 /* Long.storyboard in Resources */,
 				3A81FDE42049EB3B0030A8F7 /* Todos.storyboard in Resources */,
 				3AF9085B2047687700F848E7 /* Assets.xcassets in Resources */,
 				3AF908592047687700F848E7 /* Short.storyboard in Resources */,

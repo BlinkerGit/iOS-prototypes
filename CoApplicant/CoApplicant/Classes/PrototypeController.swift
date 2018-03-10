@@ -101,6 +101,7 @@ class PrototypeController: UIViewController {
     }
 
     view.addSubview(hiddenBackButton)
+    hiddenBackButton.isEnabled = true
   }
 
   var hotspots: [UIButton?] {

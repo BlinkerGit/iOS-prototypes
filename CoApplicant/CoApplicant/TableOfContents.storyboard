@@ -18,45 +18,35 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" enabled="NO" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J0z-kk-MuD">
-                                <rect key="frame" x="135" y="154" width="104" height="34"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                                <state key="normal" title="Long version"/>
-                                <connections>
-                                    <segue destination="X3U-BO-bO5" kind="show" id="2mn-ML-3AG"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nwQ-zd-kUi">
-                                <rect key="frame" x="133" y="196" width="108" height="34"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                                <state key="normal" title="Short version"/>
-                                <connections>
-                                    <segue destination="2cH-Nf-K4J" kind="show" id="Mqd-Uj-QLU"/>
-                                </connections>
-                            </button>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Co-Applicant Prototype" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gey-bp-j2W">
-                                <rect key="frame" x="82" y="100" width="212" height="24"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Prototype" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gey-bp-j2W">
+                                <rect key="frame" x="144" y="100" width="88" height="24"/>
                                 <fontDescription key="fontDescription" type="system" weight="medium" pointSize="20"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="  Copyright © 2018 Blinker. All rights reserved." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="2Sy-sr-ugq">
-                                <rect key="frame" x="47.5" y="639.5" width="280.5" height="16"/>
+                                <rect key="frame" x="47" y="640" width="281" height="16"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                 <color key="textColor" red="0.64313725489999995" green="0.65098039220000004" blue="0.66666666669999997" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nwQ-zd-kUi">
+                                <rect key="frame" x="164" y="151" width="46" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <state key="normal" title="Begin"/>
+                                <connections>
+                                    <segue destination="2cH-Nf-K4J" kind="show" id="4cD-lg-AQb"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="J0z-kk-MuD" firstAttribute="centerX" secondItem="Kjj-UX-mea" secondAttribute="centerX" id="1zB-Rq-aXa"/>
+                            <constraint firstItem="nwQ-zd-kUi" firstAttribute="centerX" secondItem="zzs-fX-D2R" secondAttribute="centerX" id="49s-0t-paR"/>
                             <constraint firstItem="2Sy-sr-ugq" firstAttribute="centerX" secondItem="Kjj-UX-mea" secondAttribute="centerX" id="7Te-h3-zvw"/>
+                            <constraint firstItem="nwQ-zd-kUi" firstAttribute="top" secondItem="Gey-bp-j2W" secondAttribute="bottom" constant="27" id="846-iV-oRq"/>
                             <constraint firstItem="Gey-bp-j2W" firstAttribute="top" secondItem="Kjj-UX-mea" secondAttribute="top" constant="80" id="8Yo-eT-MBq"/>
-                            <constraint firstItem="J0z-kk-MuD" firstAttribute="top" secondItem="Gey-bp-j2W" secondAttribute="bottom" constant="30" id="Cch-01-XBG"/>
                             <constraint firstItem="Gey-bp-j2W" firstAttribute="centerX" secondItem="Kjj-UX-mea" secondAttribute="centerX" id="bcB-cm-VkX"/>
-                            <constraint firstItem="nwQ-zd-kUi" firstAttribute="centerX" secondItem="J0z-kk-MuD" secondAttribute="centerX" id="dks-BF-NMe"/>
                             <constraint firstItem="Kjj-UX-mea" firstAttribute="bottom" secondItem="2Sy-sr-ugq" secondAttribute="bottom" constant="11.5" id="hHp-hT-9qb"/>
-                            <constraint firstItem="nwQ-zd-kUi" firstAttribute="top" secondItem="J0z-kk-MuD" secondAttribute="bottom" constant="8" id="xwE-Gu-tg7"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Kjj-UX-mea"/>
                     </view>
@@ -65,14 +55,6 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="EEs-uW-Ky3" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="591" y="-101"/>
-        </scene>
-        <!--Long-->
-        <scene sceneID="GLi-E8-9bh">
-            <objects>
-                <viewControllerPlaceholder storyboardName="Long" id="X3U-BO-bO5" sceneMemberID="viewController"/>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="bMT-tL-lbp" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="1211" y="-221"/>
         </scene>
         <!--Short-->
         <scene sceneID="kda-Qb-Aif">
