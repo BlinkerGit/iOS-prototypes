@@ -31,22 +31,32 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nwQ-zd-kUi">
-                                <rect key="frame" x="164" y="151" width="46" height="34"/>
+                                <rect key="frame" x="157" y="151" width="61" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                                <state key="normal" title="Begin"/>
+                                <state key="normal" title="Shorter"/>
                                 <connections>
                                     <segue destination="2cH-Nf-K4J" kind="show" id="4cD-lg-AQb"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3h4-fK-fjf">
+                                <rect key="frame" x="157" y="199" width="61" height="34"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <state key="normal" title="Shorter"/>
+                                <connections>
+                                    <segue destination="b2B-q5-CoN" kind="show" id="tlr-nE-Tg5"/>
                                 </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstItem="nwQ-zd-kUi" firstAttribute="centerX" secondItem="zzs-fX-D2R" secondAttribute="centerX" id="49s-0t-paR"/>
+                            <constraint firstItem="3h4-fK-fjf" firstAttribute="centerX" secondItem="nwQ-zd-kUi" secondAttribute="centerX" id="4Xt-LF-WhN"/>
                             <constraint firstItem="2Sy-sr-ugq" firstAttribute="centerX" secondItem="Kjj-UX-mea" secondAttribute="centerX" id="7Te-h3-zvw"/>
                             <constraint firstItem="nwQ-zd-kUi" firstAttribute="top" secondItem="Gey-bp-j2W" secondAttribute="bottom" constant="27" id="846-iV-oRq"/>
                             <constraint firstItem="Gey-bp-j2W" firstAttribute="top" secondItem="Kjj-UX-mea" secondAttribute="top" constant="80" id="8Yo-eT-MBq"/>
                             <constraint firstItem="Gey-bp-j2W" firstAttribute="centerX" secondItem="Kjj-UX-mea" secondAttribute="centerX" id="bcB-cm-VkX"/>
                             <constraint firstItem="Kjj-UX-mea" firstAttribute="bottom" secondItem="2Sy-sr-ugq" secondAttribute="bottom" constant="11.5" id="hHp-hT-9qb"/>
+                            <constraint firstItem="3h4-fK-fjf" firstAttribute="top" secondItem="nwQ-zd-kUi" secondAttribute="bottom" constant="14" id="jiY-7t-guw"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Kjj-UX-mea"/>
                     </view>
@@ -63,6 +73,14 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dgP-mh-BNU" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="1212" y="-126"/>
+        </scene>
+        <!--Shorter-->
+        <scene sceneID="Xmc-9U-bAC">
+            <objects>
+                <viewControllerPlaceholder storyboardName="Shorter" id="b2B-q5-CoN" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="gbC-yZ-GHT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1154" y="-21"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="eDv-yc-R9g">
