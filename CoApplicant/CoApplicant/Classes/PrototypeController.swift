@@ -34,9 +34,10 @@ import MessageUI
     longPress.minimumPressDuration = 1.5
     view.addGestureRecognizer(longPress)
 
-    hiddenBackButton.frame = CGRect(x: 0.0, y: 0.0, width: 100.0, height: 60.0)
+    hiddenBackButton.frame = .zero
     view.addSubview(hiddenBackButton)
     hiddenBackButton.addTarget(self, action: #selector(self.goBack), for: .touchUpInside)
+
     goToNext()
   }
 
@@ -44,12 +45,20 @@ import MessageUI
     super.viewDidAppear(animated)
     view.addSubview(hiddenBackButton)
 
+    let width: CGFloat = 100.0
+    let height: CGFloat = 70.0
+    let closeRect = isModal ? CGRect(x: view.bounds.maxX - width, y: 0.0, width: width, height: height): CGRect(x: 0.0, y: 0.0, width: width, height: height)
+    hiddenBackButton.frame = closeRect
+  }
+
+  var isModal: Bool {
+    return presentingViewController != nil
   }
 
   @objc
   func goBack() {
-    if self.presentingViewController != nil {
-      self.presentingViewController?.dismiss(animated: true, completion: nil)
+    if isModal {
+      presentingViewController?.dismiss(animated: true, completion: nil)
     } else {
       navigationController?.popViewController(animated: true)
     }
@@ -68,7 +77,7 @@ import MessageUI
   override func motionEnded(_ motion: UIEventSubtype, with event: UIEvent?) {
     if motion == .motionShake {
       if presentingViewController != nil {
-        let parent = self.presentingViewController as! UINavigationController
+        let parent = presentingViewController as! UINavigationController
         parent.dismiss(animated: true, completion: {
           parent.popToRootViewController(animated: true)
         })
@@ -82,7 +91,7 @@ import MessageUI
     guard let current = currentImageView else { return }
 
     if current is TimedImageView {
-      self.view.isUserInteractionEnabled = false
+      view.isUserInteractionEnabled = false
       delay(0.8, closure: {
         self.currentHotspot?.sendActions(for: .touchUpInside)
         self.view.isUserInteractionEnabled = true
