@@ -25,38 +25,41 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="  Copyright © 2018 Blinker. All rights reserved." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="9" translatesAutoresizingMaskIntoConstraints="NO" id="2Sy-sr-ugq">
-                                <rect key="frame" x="47" y="640" width="281" height="16"/>
+                                <rect key="frame" x="47.5" y="640" width="280.5" height="16"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="13"/>
                                 <color key="textColor" red="0.64313725489999995" green="0.65098039220000004" blue="0.66666666669999997" alpha="1" colorSpace="calibratedRGB"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nwQ-zd-kUi">
-                                <rect key="frame" x="157" y="151" width="61" height="34"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                                <state key="normal" title="Shorter"/>
-                                <connections>
-                                    <segue destination="2cH-Nf-K4J" kind="show" id="4cD-lg-AQb"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3h4-fK-fjf">
-                                <rect key="frame" x="157" y="199" width="61" height="34"/>
-                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                                <state key="normal" title="Shorter"/>
-                                <connections>
-                                    <segue destination="b2B-q5-CoN" kind="show" id="tlr-nE-Tg5"/>
-                                </connections>
-                            </button>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="RTw-Bh-rqk">
+                                <rect key="frame" x="157.5" y="151" width="61" height="76"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nwQ-zd-kUi">
+                                        <rect key="frame" x="0.0" y="0.0" width="61" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                        <state key="normal" title="Short"/>
+                                        <connections>
+                                            <segue destination="2cH-Nf-K4J" kind="show" id="4cD-lg-AQb"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3h4-fK-fjf">
+                                        <rect key="frame" x="0.0" y="42" width="61" height="34"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                        <state key="normal" title="Shorter"/>
+                                        <connections>
+                                            <segue destination="b2B-q5-CoN" kind="show" id="tlr-nE-Tg5"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstItem="nwQ-zd-kUi" firstAttribute="centerX" secondItem="zzs-fX-D2R" secondAttribute="centerX" id="49s-0t-paR"/>
-                            <constraint firstItem="3h4-fK-fjf" firstAttribute="centerX" secondItem="nwQ-zd-kUi" secondAttribute="centerX" id="4Xt-LF-WhN"/>
                             <constraint firstItem="2Sy-sr-ugq" firstAttribute="centerX" secondItem="Kjj-UX-mea" secondAttribute="centerX" id="7Te-h3-zvw"/>
-                            <constraint firstItem="nwQ-zd-kUi" firstAttribute="top" secondItem="Gey-bp-j2W" secondAttribute="bottom" constant="27" id="846-iV-oRq"/>
+                            <constraint firstItem="RTw-Bh-rqk" firstAttribute="centerX" secondItem="Gey-bp-j2W" secondAttribute="centerX" id="7iX-Wv-qwU"/>
                             <constraint firstItem="Gey-bp-j2W" firstAttribute="top" secondItem="Kjj-UX-mea" secondAttribute="top" constant="80" id="8Yo-eT-MBq"/>
                             <constraint firstItem="Gey-bp-j2W" firstAttribute="centerX" secondItem="Kjj-UX-mea" secondAttribute="centerX" id="bcB-cm-VkX"/>
                             <constraint firstItem="Kjj-UX-mea" firstAttribute="bottom" secondItem="2Sy-sr-ugq" secondAttribute="bottom" constant="11.5" id="hHp-hT-9qb"/>
-                            <constraint firstItem="3h4-fK-fjf" firstAttribute="top" secondItem="nwQ-zd-kUi" secondAttribute="bottom" constant="14" id="jiY-7t-guw"/>
+                            <constraint firstItem="RTw-Bh-rqk" firstAttribute="top" secondItem="Gey-bp-j2W" secondAttribute="bottom" constant="27" id="svg-qS-WhJ"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Kjj-UX-mea"/>
                     </view>

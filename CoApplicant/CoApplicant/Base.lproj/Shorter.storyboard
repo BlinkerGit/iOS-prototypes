@@ -319,36 +319,31 @@
             </objects>
             <point key="canvasLocation" x="361" y="2259"/>
         </scene>
-        <!--Swipe Controller-->
+        <!--Tap Controller-->
         <scene sceneID="WFR-8q-NNa">
             <objects>
-                <viewController id="mmm-tg-fpF" customClass="SwipeController" customModule="CoApplicant" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="mmm-tg-fpF" customClass="TapController" customModule="CoApplicant" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="3bh-eg-0WO">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <imageView userInteractionEnabled="NO" tag="1" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="confirmBothSuccess" translatesAutoresizingMaskIntoConstraints="NO" id="osA-fu-MgP">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                            </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="jointWithCurrentAddress" translatesAutoresizingMaskIntoConstraints="NO" id="M1o-Bu-MgG">
                                 <rect key="frame" x="0.0" y="20" width="375" height="647"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OHM-Hu-ija">
-                                <rect key="frame" x="0.0" y="615" width="375" height="42"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="42" id="wfW-bs-tbh"/>
-                                </constraints>
-                                <connections>
-                                    <segue destination="2bd-tp-6Lq" kind="show" id="isX-5J-2dA"/>
-                                </connections>
-                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="SiZ-q5-UOM" firstAttribute="trailing" secondItem="M1o-Bu-MgG" secondAttribute="trailing" id="1o5-gc-6ne"/>
-                            <constraint firstItem="OHM-Hu-ija" firstAttribute="width" secondItem="3bh-eg-0WO" secondAttribute="width" id="8Ic-PX-jca"/>
-                            <constraint firstItem="OHM-Hu-ija" firstAttribute="centerX" secondItem="SiZ-q5-UOM" secondAttribute="centerX" id="8V7-N3-itH"/>
                             <constraint firstItem="M1o-Bu-MgG" firstAttribute="bottom" secondItem="SiZ-q5-UOM" secondAttribute="bottom" id="IdL-J2-Ds0"/>
                             <constraint firstItem="M1o-Bu-MgG" firstAttribute="leading" secondItem="SiZ-q5-UOM" secondAttribute="leading" id="Kye-ZY-LTC"/>
                             <constraint firstItem="M1o-Bu-MgG" firstAttribute="top" secondItem="SiZ-q5-UOM" secondAttribute="top" id="gxq-VL-ome"/>
-                            <constraint firstItem="OHM-Hu-ija" firstAttribute="bottom" secondItem="SiZ-q5-UOM" secondAttribute="bottom" constant="-10" id="jjN-cj-1Ka"/>
+                            <constraint firstItem="osA-fu-MgP" firstAttribute="bottom" secondItem="M1o-Bu-MgG" secondAttribute="bottom" id="mlh-z1-XrS"/>
+                            <constraint firstItem="osA-fu-MgP" firstAttribute="top" secondItem="M1o-Bu-MgG" secondAttribute="top" id="omD-I7-3i0"/>
+                            <constraint firstItem="osA-fu-MgP" firstAttribute="leading" secondItem="M1o-Bu-MgG" secondAttribute="leading" id="pE2-un-6YL"/>
+                            <constraint firstItem="osA-fu-MgP" firstAttribute="trailing" secondItem="M1o-Bu-MgG" secondAttribute="trailing" id="yPh-1w-dKg"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="SiZ-q5-UOM"/>
                     </view>
@@ -356,79 +351,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4UX-eu-rF8" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1953" y="2258"/>
-        </scene>
-        <!--Tap Controller-->
-        <scene sceneID="3Xs-rr-LwC">
-            <objects>
-                <viewController id="2bd-tp-6Lq" customClass="TapController" customModule="CoApplicant" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="neZ-Gu-glY">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <imageView userInteractionEnabled="NO" tag="1" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="26-checkingCredit" translatesAutoresizingMaskIntoConstraints="NO" id="Zqh-lI-WWW" customClass="TimedImageView" customModule="CoApplicant" customModuleProvider="target">
-                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
-                            </imageView>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="softPullConsent" translatesAutoresizingMaskIntoConstraints="NO" id="5Zn-u0-KQr">
-                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
-                            </imageView>
-                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Jjx-Kz-obg" userLabel="Success">
-                                <rect key="frame" x="16" y="57" width="343" height="590"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="590" id="9ao-Oi-vUh"/>
-                                    <constraint firstAttribute="width" constant="343" id="btR-vJ-NEl"/>
-                                </constraints>
-                                <connections>
-                                    <segue destination="yDh-sR-gBN" kind="modal" modalTransitionStyle="crossDissolve" id="U5j-gf-w4p"/>
-                                </connections>
-                            </button>
-                        </subviews>
-                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                        <constraints>
-                            <constraint firstItem="ByM-U0-MXu" firstAttribute="trailing" secondItem="Jjx-Kz-obg" secondAttribute="trailing" constant="16" id="52c-dt-iUo"/>
-                            <constraint firstItem="Zqh-lI-WWW" firstAttribute="trailing" secondItem="5Zn-u0-KQr" secondAttribute="trailing" id="Bgq-FX-7nh"/>
-                            <constraint firstItem="Zqh-lI-WWW" firstAttribute="leading" secondItem="5Zn-u0-KQr" secondAttribute="leading" id="DLr-f0-TqP"/>
-                            <constraint firstItem="ByM-U0-MXu" firstAttribute="trailing" secondItem="5Zn-u0-KQr" secondAttribute="trailing" id="EBc-dC-Mqy"/>
-                            <constraint firstItem="5Zn-u0-KQr" firstAttribute="top" secondItem="ByM-U0-MXu" secondAttribute="top" id="HPy-0c-rvw"/>
-                            <constraint firstItem="5Zn-u0-KQr" firstAttribute="leading" secondItem="ByM-U0-MXu" secondAttribute="leading" id="JaI-hV-ETz"/>
-                            <constraint firstItem="ByM-U0-MXu" firstAttribute="bottom" secondItem="5Zn-u0-KQr" secondAttribute="bottom" id="VL4-Va-mtj"/>
-                            <constraint firstItem="Zqh-lI-WWW" firstAttribute="bottom" secondItem="5Zn-u0-KQr" secondAttribute="bottom" id="XAC-jn-zco"/>
-                            <constraint firstItem="Zqh-lI-WWW" firstAttribute="top" secondItem="ByM-U0-MXu" secondAttribute="top" id="kVa-x7-lSX"/>
-                            <constraint firstItem="ByM-U0-MXu" firstAttribute="bottom" secondItem="Jjx-Kz-obg" secondAttribute="bottom" constant="20" id="yse-YK-KAt"/>
-                        </constraints>
-                        <viewLayoutGuide key="safeArea" id="ByM-U0-MXu"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="qXI-AH-RLV"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="4M5-M7-hHW" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="2719" y="2267"/>
-        </scene>
-        <!--Prototype Controller-->
-        <scene sceneID="Dwr-Hd-P1a">
-            <objects>
-                <viewController id="yDh-sR-gBN" customClass="PrototypeController" customModule="CoApplicant" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="CIR-ul-HLb">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="softPullConsent-success" translatesAutoresizingMaskIntoConstraints="NO" id="oND-uA-NE1">
-                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
-                            </imageView>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-                        <constraints>
-                            <constraint firstAttribute="trailing" secondItem="oND-uA-NE1" secondAttribute="trailing" id="4V2-xD-U4Q"/>
-                            <constraint firstItem="oND-uA-NE1" firstAttribute="bottom" secondItem="mHl-9u-jih" secondAttribute="bottom" id="Sgq-j1-o2V"/>
-                            <constraint firstItem="oND-uA-NE1" firstAttribute="top" secondItem="mHl-9u-jih" secondAttribute="top" id="XrF-m7-Mac"/>
-                            <constraint firstItem="oND-uA-NE1" firstAttribute="leading" secondItem="CIR-ul-HLb" secondAttribute="leading" id="foc-yo-SMq"/>
-                        </constraints>
-                        <viewLayoutGuide key="safeArea" id="mHl-9u-jih"/>
-                    </view>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="9U3-GL-xtk" userLabel="First Responder" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="3502" y="2267"/>
+            <point key="canvasLocation" x="1856.8" y="2266.4167916041979"/>
         </scene>
         <!--Prototype Controller-->
         <scene sceneID="q0b-Or-09g">
@@ -815,7 +738,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="verifyEmail" translatesAutoresizingMaskIntoConstraints="NO" id="EWZ-We-qEe">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="verifyEmail-Improved" translatesAutoresizingMaskIntoConstraints="NO" id="EWZ-We-qEe">
                                 <rect key="frame" x="0.0" y="20" width="375" height="647"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ole-kR-Ab5">
@@ -855,13 +778,13 @@
         <image name="20-coApp_manualDataEntry-whiteout" width="690" height="1226"/>
         <image name="24-coApp_SSN-empty" width="690" height="1226"/>
         <image name="24-coApp_SSN-filled" width="690" height="1226"/>
-        <image name="26-checkingCredit" width="414" height="736"/>
         <image name="5-SignUp" width="414" height="736"/>
         <image name="5-SignUp-whiteout" width="414" height="736"/>
         <image name="7-refiSplashScreen" width="414" height="736"/>
         <image name="9-vehicleDetailsVerifying" width="414" height="736"/>
         <image name="SSN" width="690" height="1226"/>
         <image name="SSNpre" width="2070" height="3680"/>
+        <image name="confirmBothSuccess" width="2070" height="3680"/>
         <image name="confirmVehicleDetailsAltFilled" width="690" height="1226"/>
         <image name="confirmVehicleDetailsAltPre" width="690" height="1226"/>
         <image name="consentToE-Recs" width="414" height="736"/>
@@ -871,12 +794,11 @@
         <image name="inbox" width="1243" height="2209"/>
         <image name="jointWithCurrentAddress" width="690" height="1226"/>
         <image name="reviewAndConfirm" width="2070" height="3680"/>
-        <image name="softPullConsent" width="414" height="736"/>
-        <image name="softPullConsent-success" width="414" height="736"/>
         <image name="springboard" width="414" height="736"/>
         <image name="vehicleIdentificationFilled" width="414" height="736"/>
         <image name="vehicleIdentificationPre" width="414" height="736"/>
         <image name="vehicleIdentificationSuccess" width="414" height="736"/>
         <image name="verifyEmail" width="414" height="736"/>
+        <image name="verifyEmail-Improved" width="414" height="736"/>
     </resources>
 </document>
