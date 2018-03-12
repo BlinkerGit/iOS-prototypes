@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		3A77FA2620551AF600287CAC /* Shorter.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A77FA2420551AF600287CAC /* Shorter.storyboard */; };
+		3A77FA2C2055FAEE00287CAC /* DelayedSignUp.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A77FA2A2055FAEE00287CAC /* DelayedSignUp.storyboard */; };
 		3A81FDE22049D5A70030A8F7 /* TableOfContents.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A81FDE12049D5A70030A8F7 /* TableOfContents.storyboard */; };
 		3A81FDE42049EB3B0030A8F7 /* Todos.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3A81FDE32049EB3B0030A8F7 /* Todos.storyboard */; };
 		3A81FDE8204CB0210030A8F7 /* CameraSnapButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3A81FDE7204CB0210030A8F7 /* CameraSnapButton.swift */; };
@@ -26,6 +27,7 @@
 /* Begin PBXFileReference section */
 		391A1F8813AF69B6B1CB0EDC /* Pods-CoApplicant.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-CoApplicant.release.xcconfig"; path = "Pods/Target Support Files/Pods-CoApplicant/Pods-CoApplicant.release.xcconfig"; sourceTree = "<group>"; };
 		3A77FA2520551AF600287CAC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Shorter.storyboard; sourceTree = "<group>"; };
+		3A77FA2B2055FAEE00287CAC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/DelayedSignUp.storyboard; sourceTree = "<group>"; };
 		3A81FDE12049D5A70030A8F7 /* TableOfContents.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = TableOfContents.storyboard; sourceTree = "<group>"; };
 		3A81FDE32049EB3B0030A8F7 /* Todos.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Todos.storyboard; sourceTree = "<group>"; };
 		3A81FDE7204CB0210030A8F7 /* CameraSnapButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraSnapButton.swift; sourceTree = "<group>"; };
@@ -102,6 +104,7 @@
 				3A81FDE12049D5A70030A8F7 /* TableOfContents.storyboard */,
 				3AF908572047687700F848E7 /* Short.storyboard */,
 				3A77FA2420551AF600287CAC /* Shorter.storyboard */,
+				3A77FA2A2055FAEE00287CAC /* DelayedSignUp.storyboard */,
 				3A81FDE32049EB3B0030A8F7 /* Todos.storyboard */,
 				3ACBC4EE204E5124006F275E /* Classes */,
 				3AF9085A2047687700F848E7 /* Assets.xcassets */,
@@ -184,6 +187,7 @@
 			files = (
 				3A77FA2620551AF600287CAC /* Shorter.storyboard in Resources */,
 				3AF9085E2047687700F848E7 /* LaunchScreen.storyboard in Resources */,
+				3A77FA2C2055FAEE00287CAC /* DelayedSignUp.storyboard in Resources */,
 				3A81FDE42049EB3B0030A8F7 /* Todos.storyboard in Resources */,
 				3AF9085B2047687700F848E7 /* Assets.xcassets in Resources */,
 				3AF908592047687700F848E7 /* Short.storyboard in Resources */,
@@ -271,6 +275,14 @@
 				3A77FA2520551AF600287CAC /* Base */,
 			);
 			name = Shorter.storyboard;
+			sourceTree = "<group>";
+		};
+		3A77FA2A2055FAEE00287CAC /* DelayedSignUp.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3A77FA2B2055FAEE00287CAC /* Base */,
+			);
+			name = DelayedSignUp.storyboard;
 			sourceTree = "<group>";
 		};
 		3AF908572047687700F848E7 /* Short.storyboard */ = {

@@ -49,7 +49,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="361" y="134"/>
+            <point key="canvasLocation" x="361" y="843"/>
         </scene>
         <!--Tap Controller-->
         <scene sceneID="0Du-AD-181">
@@ -95,7 +95,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4K6-rO-gid" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1810" y="134"/>
+            <point key="canvasLocation" x="1825" y="2264"/>
         </scene>
         <!--Prototype Controller-->
         <scene sceneID="rHI-FK-dkY">
@@ -111,7 +111,7 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZKz-YB-vCl">
                                 <rect key="frame" x="10" y="617" width="355" height="40"/>
                                 <connections>
-                                    <segue destination="wxb-u0-Cv9" kind="show" id="MSd-sL-3co"/>
+                                    <segue destination="gxM-bb-nws" kind="show" id="wYh-kG-9fz"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -132,7 +132,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="3Ra-Kc-bGX" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1094" y="134"/>
+            <point key="canvasLocation" x="1094" y="843"/>
         </scene>
         <!--Tap Controller-->
         <scene sceneID="g7R-9G-kjb">
@@ -177,7 +177,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="jdg-Kt-7Ae" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2516" y="134"/>
+            <point key="canvasLocation" x="2532" y="2264"/>
         </scene>
         <!--Tap Controller-->
         <scene sceneID="Jms-Ry-j7R">
@@ -317,33 +317,35 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="kfb-SU-dDq" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="361" y="2259"/>
+            <point key="canvasLocation" x="3393" y="1545"/>
         </scene>
-        <!--Tap Controller-->
+        <!--Prototype Controller-->
         <scene sceneID="WFR-8q-NNa">
             <objects>
-                <viewController id="mmm-tg-fpF" customClass="TapController" customModule="CoApplicant" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController id="mmm-tg-fpF" customClass="PrototypeController" customModule="CoApplicant" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="3bh-eg-0WO">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" tag="1" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="confirmBothSuccess" translatesAutoresizingMaskIntoConstraints="NO" id="osA-fu-MgP">
-                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
-                            </imageView>
                             <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="jointWithCurrentAddress" translatesAutoresizingMaskIntoConstraints="NO" id="M1o-Bu-MgG">
                                 <rect key="frame" x="0.0" y="20" width="375" height="647"/>
                             </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="H2b-bH-JOA">
+                                <rect key="frame" x="8" y="637" width="351" height="30"/>
+                                <connections>
+                                    <segue destination="wxb-u0-Cv9" kind="show" id="dr5-TC-Utd"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="SiZ-q5-UOM" firstAttribute="trailing" secondItem="M1o-Bu-MgG" secondAttribute="trailing" id="1o5-gc-6ne"/>
+                            <constraint firstItem="H2b-bH-JOA" firstAttribute="bottom" secondItem="M1o-Bu-MgG" secondAttribute="bottom" id="BWc-n2-CmG"/>
                             <constraint firstItem="M1o-Bu-MgG" firstAttribute="bottom" secondItem="SiZ-q5-UOM" secondAttribute="bottom" id="IdL-J2-Ds0"/>
                             <constraint firstItem="M1o-Bu-MgG" firstAttribute="leading" secondItem="SiZ-q5-UOM" secondAttribute="leading" id="Kye-ZY-LTC"/>
                             <constraint firstItem="M1o-Bu-MgG" firstAttribute="top" secondItem="SiZ-q5-UOM" secondAttribute="top" id="gxq-VL-ome"/>
-                            <constraint firstItem="osA-fu-MgP" firstAttribute="bottom" secondItem="M1o-Bu-MgG" secondAttribute="bottom" id="mlh-z1-XrS"/>
-                            <constraint firstItem="osA-fu-MgP" firstAttribute="top" secondItem="M1o-Bu-MgG" secondAttribute="top" id="omD-I7-3i0"/>
-                            <constraint firstItem="osA-fu-MgP" firstAttribute="leading" secondItem="M1o-Bu-MgG" secondAttribute="leading" id="pE2-un-6YL"/>
-                            <constraint firstItem="osA-fu-MgP" firstAttribute="trailing" secondItem="M1o-Bu-MgG" secondAttribute="trailing" id="yPh-1w-dKg"/>
+                            <constraint firstItem="H2b-bH-JOA" firstAttribute="trailing" secondItem="3bh-eg-0WO" secondAttribute="trailingMargin" id="p3r-TR-Dup"/>
+                            <constraint firstItem="H2b-bH-JOA" firstAttribute="leading" secondItem="SiZ-q5-UOM" secondAttribute="leading" constant="8" id="r6l-IK-0pY"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="SiZ-q5-UOM"/>
                     </view>
@@ -351,7 +353,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4UX-eu-rF8" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1856.8" y="2266.4167916041979"/>
+            <point key="canvasLocation" x="1124" y="2264"/>
         </scene>
         <!--Prototype Controller-->
         <scene sceneID="q0b-Or-09g">
@@ -434,7 +436,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="egV-Oc-etb" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1121" y="2268"/>
+            <point key="canvasLocation" x="388" y="2265"/>
         </scene>
         <!--Prototype Controller-->
         <scene sceneID="gdq-d8-vPK">
@@ -473,7 +475,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="87U-uC-GE2" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3213.5999999999999" y="133.5832083958021"/>
+            <point key="canvasLocation" x="3231" y="2264"/>
         </scene>
         <!--I-->
         <scene sceneID="CId-Ry-mBW">
@@ -514,7 +516,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="HWW-a9-I1I" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="361" y="828"/>
+            <point key="canvasLocation" x="388" y="2992"/>
         </scene>
         <!--Prototype Controller-->
         <scene sceneID="iuo-BB-BbP">
@@ -550,7 +552,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="FTo-So-Vge" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1889" y="827"/>
+            <point key="canvasLocation" x="1916" y="2991"/>
         </scene>
         <!--Prototype Controller-->
         <scene sceneID="uB6-md-7JQ">
@@ -566,7 +568,7 @@
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JQD-bZ-mdW">
                                 <rect key="frame" x="117" y="349" width="144" height="38"/>
                                 <connections>
-                                    <segue destination="dP2-Z0-IS7" kind="show" id="w2t-WL-KOI"/>
+                                    <segue destination="Jan-PJ-bd7" kind="show" id="V7t-Bg-wE8"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -586,7 +588,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="KXi-dg-aZD" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="2654" y="828"/>
+            <point key="canvasLocation" x="2681" y="2992"/>
         </scene>
         <!--Prototype Controller-->
         <scene sceneID="aOx-Sp-l6v">
@@ -625,7 +627,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="z6F-RJ-g5K" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="1105" y="828"/>
+            <point key="canvasLocation" x="1132" y="2992"/>
         </scene>
         <!--Tap Controller-->
         <scene sceneID="viA-Yb-gRN">
@@ -732,7 +734,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="41O-Hy-JWj" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4085.5999999999999" y="826.23688155922048"/>
+            <point key="canvasLocation" x="1890" y="844"/>
         </scene>
         <!--Prototype Controller-->
         <scene sceneID="seQ-VS-JUM">
@@ -758,46 +760,41 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="olK-ec-Afv" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="4872.8000000000002" y="867.61619190404804"/>
+            <point key="canvasLocation" x="2654" y="844"/>
         </scene>
-        <!--Prototype Controller-->
-        <scene sceneID="Dya-Vm-10Y">
+        <!--Tap Controller-->
+        <scene sceneID="mxa-2b-fqL">
             <objects>
-                <viewController id="dP2-Z0-IS7" customClass="PrototypeController" customModule="CoApplicant" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="lV2-k9-GMR">
+                <viewController id="Jan-PJ-bd7" customClass="TapController" customModule="CoApplicant" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Gb3-p5-SX8">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="verifyEmail-Improved" translatesAutoresizingMaskIntoConstraints="NO" id="EWZ-We-qEe">
+                            <imageView userInteractionEnabled="NO" tag="1" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="confirmBothSuccess" translatesAutoresizingMaskIntoConstraints="NO" id="90k-RS-eE2">
                                 <rect key="frame" x="0.0" y="20" width="375" height="647"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ole-kR-Ab5">
-                                <rect key="frame" x="8" y="618" width="359" height="42"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="42" id="HgH-Rp-RBU"/>
-                                </constraints>
-                                <connections>
-                                    <segue destination="gxM-bb-nws" kind="show" id="hMO-P7-lam"/>
-                                </connections>
-                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="jointWithCurrentAddress" translatesAutoresizingMaskIntoConstraints="NO" id="XjH-41-60G" customClass="TimedImageView" customModule="CoApplicant" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="20" width="375" height="647"/>
+                            </imageView>
                         </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="D2a-TV-Oe7" firstAttribute="bottom" secondItem="Ole-kR-Ab5" secondAttribute="bottom" constant="7" id="7jL-ig-C0Y"/>
-                            <constraint firstItem="Ole-kR-Ab5" firstAttribute="centerX" secondItem="EWZ-We-qEe" secondAttribute="centerX" id="HLw-1n-TeN"/>
-                            <constraint firstItem="EWZ-We-qEe" firstAttribute="top" secondItem="D2a-TV-Oe7" secondAttribute="top" id="JGy-fu-DWv"/>
-                            <constraint firstAttribute="trailing" secondItem="EWZ-We-qEe" secondAttribute="trailing" id="Jnx-ES-gfD"/>
-                            <constraint firstItem="EWZ-We-qEe" firstAttribute="bottom" secondItem="D2a-TV-Oe7" secondAttribute="bottom" id="N6k-nZ-onX"/>
-                            <constraint firstItem="EWZ-We-qEe" firstAttribute="leading" secondItem="lV2-k9-GMR" secondAttribute="leading" id="qZT-3R-gFk"/>
-                            <constraint firstItem="D2a-TV-Oe7" firstAttribute="trailing" secondItem="Ole-kR-Ab5" secondAttribute="trailing" constant="8" id="quY-WH-To2"/>
-                            <constraint firstItem="Ole-kR-Ab5" firstAttribute="leading" secondItem="D2a-TV-Oe7" secondAttribute="leading" constant="8" id="wwC-kd-G3W"/>
+                            <constraint firstItem="90k-RS-eE2" firstAttribute="top" secondItem="XjH-41-60G" secondAttribute="top" id="G1J-M2-BwA"/>
+                            <constraint firstItem="90k-RS-eE2" firstAttribute="trailing" secondItem="XjH-41-60G" secondAttribute="trailing" id="G8n-s1-wtO"/>
+                            <constraint firstItem="XjH-41-60G" firstAttribute="top" secondItem="hW8-KB-jfF" secondAttribute="top" id="cnd-NY-NFb"/>
+                            <constraint firstItem="XjH-41-60G" firstAttribute="leading" secondItem="hW8-KB-jfF" secondAttribute="leading" id="i22-oK-AXa"/>
+                            <constraint firstItem="hW8-KB-jfF" firstAttribute="trailing" secondItem="XjH-41-60G" secondAttribute="trailing" id="kc8-n8-sJq"/>
+                            <constraint firstItem="XjH-41-60G" firstAttribute="bottom" secondItem="hW8-KB-jfF" secondAttribute="bottom" id="l9z-BW-u4N"/>
+                            <constraint firstItem="90k-RS-eE2" firstAttribute="bottom" secondItem="XjH-41-60G" secondAttribute="bottom" id="lud-eR-qiB"/>
+                            <constraint firstItem="90k-RS-eE2" firstAttribute="leading" secondItem="XjH-41-60G" secondAttribute="leading" id="xN9-Wa-mrQ"/>
                         </constraints>
-                        <viewLayoutGuide key="safeArea" id="D2a-TV-Oe7"/>
+                        <viewLayoutGuide key="safeArea" id="hW8-KB-jfF"/>
                     </view>
+                    <navigationItem key="navigationItem" id="Sbt-Hs-wkO"/>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="rCC-5Y-5Vu" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="m27-bv-NZr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="3357.5999999999999" y="826.23688155922048"/>
+            <point key="canvasLocation" x="3393" y="2992"/>
         </scene>
     </scenes>
     <resources>
