@@ -31,30 +31,14 @@
                                 <nil key="highlightedColor"/>
                             </label>
                             <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" spacing="8" translatesAutoresizingMaskIntoConstraints="NO" id="RTw-Bh-rqk">
-                                <rect key="frame" x="60" y="151" width="256" height="118"/>
+                                <rect key="frame" x="169" y="151" width="38" height="34"/>
                                 <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nwQ-zd-kUi">
-                                        <rect key="frame" x="0.0" y="0.0" width="256" height="34"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                                        <state key="normal" title="Elliot's"/>
-                                        <connections>
-                                            <segue destination="2cH-Nf-K4J" kind="show" id="4cD-lg-AQb"/>
-                                        </connections>
-                                    </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3h4-fK-fjf">
-                                        <rect key="frame" x="0.0" y="42" width="256" height="34"/>
+                                        <rect key="frame" x="0.0" y="0.0" width="38" height="34"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                                        <state key="normal" title="Streamlined signup &amp; vehicle ID"/>
+                                        <state key="normal" title="start"/>
                                         <connections>
                                             <segue destination="b2B-q5-CoN" kind="show" id="tlr-nE-Tg5"/>
-                                        </connections>
-                                    </button>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nyU-Ed-B53">
-                                        <rect key="frame" x="0.0" y="84" width="256" height="34"/>
-                                        <fontDescription key="fontDescription" type="system" pointSize="18"/>
-                                        <state key="normal" title="Delayed signup"/>
-                                        <connections>
-                                            <segue destination="vyM-Tg-tIT" kind="show" id="Hoi-88-lJk"/>
                                         </connections>
                                     </button>
                                 </subviews>
